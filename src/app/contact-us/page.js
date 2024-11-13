@@ -1,10 +1,17 @@
-/* eslint-disable react/no-unescaped-entities */
+'use client'/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { contactUsCardData } from "../components/common/Helper";
 import WeStarted from "../components/WeStarted";
-
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration
+          once: true, // Whether animation should happen only once
+        });
+      }, []);
   return (
     <div className="pt-32 pb-10">
       <div className="container max-w-[1360px] mx-auto px-4">
@@ -28,7 +35,11 @@ export default function Home() {
               key={i}
               className="lg:w-4/12 sm:px-3 md:w-6/12 mt-[40px] sm:w-9/12 w-full"
             >
-              <div className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px]">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-in-sine"
+                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px]"
+              >
                 <span>{card.svg_img}</span>
                 <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px]ff_general_medium mt-5">
                   {card.Heading}
