@@ -34,3 +34,8 @@ body {
 .ff_general_bold{
   font-family: generalBold;
 }
+
+
+.bg_liner_section{
+  background: linear-gradient(155deg, #eef2ff, #fff 50%, #fafafa);
+}
