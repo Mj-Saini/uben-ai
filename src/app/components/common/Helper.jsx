@@ -58,13 +58,13 @@ export const HomeCardData = [
   },
   {
     description:
-      "I downloaded several apps and kept only the best ones. And I think Üben is one of them.",
-    name: "Abir, Morocco",
+      "I no longer subscribe to Duolingo. Üben is by far the best one [of AI language apps].",
+    name: "Jon, Canada",
   },
   {
     description:
-      "I downloaded several apps and kept only the best ones. And I think Üben is one of them.",
-    name: "Abir, Morocco",
+      "I no longer subscribe to Duolingo. Üben is by far the best one [of AI language apps].",
+    name: "Anonymous, USA",
   },
 ];
 

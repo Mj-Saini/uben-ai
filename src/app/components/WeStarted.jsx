@@ -10,7 +10,7 @@ const WeStarted = () => {
     <div>
       <section className="py-16 bg-white">
         <div className="container max-w-[1360px] mx-auto px-4 ">
-          <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 bg-yellow_bg_gradient rounded-[40px]  md:rounded-[64px] border border-[#ffdea9] overflow-hidden">
+          <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 bg-yellow_bg_gradient rounded-[40px] border border-[#ffdea9] overflow-hidden">
             <div className="w-full lg:w-1/2">
               <h2
                 data-aos="fade-up"
@@ -23,7 +23,7 @@ const WeStarted = () => {
               <div className="mt-6 flex flex-col gap-3">
                 <div
                   data-aos="fade-up"
-                  data-aos-delay="200"
+                  data-aos-delay="100"
                   data-aos-easing="ease-in-sine"
                   className="flex gap-2 items-center "
                 >
@@ -37,7 +37,7 @@ const WeStarted = () => {
                 <div
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="300"
+                  data-aos-delay="100"
                   className="flex gap-2 items-center "
                 >
                   <div>
@@ -50,7 +50,7 @@ const WeStarted = () => {
                 <div
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="400"
+                  data-aos-delay="100"
                   className="flex gap-2 items-center "
                 >
                   <div>
@@ -68,7 +68,7 @@ const WeStarted = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-easing="ease-in-sine"
-                className="text-2xl md:text-[32px] text-black font-semibold text-start lg:text-center ff_general_semibold"
+                className="text-2xl md:text-[32px] text-black text-start lg:text-center ff_general_medium"
               >
                 Download the app now and start learning.
               </h3>
@@ -76,10 +76,11 @@ const WeStarted = () => {
               <div className="flex justify-start sm:justify-center mt-6">
                 <Link
                   data-aos="fade-up"
-                  data-aos-offset="300"
+                  data-aos-offset="100"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="200"
-                  href=""
+                  data-aos-delay="100"
+                  target='_blank'
+            href="https://www.apple.com/in/app-store/"
                   className="section2_video-link play_store w-inline-block"
                 >
                   <Image

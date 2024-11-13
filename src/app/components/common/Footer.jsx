@@ -14,11 +14,17 @@ export const Footer = () => {
         <div className="footer-wrapper">
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="100"  className="w-1/3">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="100"
+              className="w-1/3"
+            >
               {/* Logo */}
               <Link href="/">
                 <Image
-                  className={`w-28 sm:w-32 md:w-[180px] `}
+                  className={`w-28 sm:w-32 md:w-[160px] `}
                   src={logo}
                   alt="logo"
                 />
@@ -31,17 +37,30 @@ export const Footer = () => {
                 {/* Company links */}
                 <div className="w-1/2">
                   <div className="flex flex-col gap-2">
-                    <h3 data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="100"  className="font-semibold text-[#4b5563] text-base capitalize">
+                    <h3
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
+                      className="font-semibold text-[#4b5563] text-base capitalize"
+                    >
                       Company
                     </h3>
-                    <Link data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="200" 
+                    <Link
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
                       href="/why-uben"
                       className="font-normal text-[#292524] text-base hover:text-black"
                     >
                       About us
                     </Link>
                     <Link
-                    data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="300" 
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
                       href="/prices"
                       className="font-normal text-[#292524] text-base hover:text-black"
                     >
@@ -52,19 +71,30 @@ export const Footer = () => {
                 {/* More links */}
                 <div className=" w-1/2">
                   <div className="flex flex-col gap-2">
-                    <h3 data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="100"  className="font-semibold text-[#4b5563] text-base capitalize">
+                    <h3
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
+                      className="font-semibold text-[#4b5563] text-base capitalize"
+                    >
                       more
                     </h3>
                     <Link
-                    data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="200" 
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
                       href="/contact-us"
                       className="font-normal text-[#292524] text-base hover:text-black"
                     >
                       contact us
                     </Link>
-                  
                     <Link
-                    data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="400" 
+                      data-aos="fade-up"
+                      data-aos-offset="100"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-delay="100"
                       href="/faqs"
                       className="font-normal text-[#292524] text-base hover:text-black"
                     >
@@ -82,14 +112,15 @@ export const Footer = () => {
           {/* Bottom section with copyright and email */}
           <div className=" flex flex-wrap gap-3 justify-start sm:justify-between items-center">
             <p className=" text-gray-600 text-start">
-            Copyright {currentYear} Üben AI. <span className="block"> All rights reserved.</span>
+              Copyright {currentYear} Üben AI.{" "}
+              <span className="block"> All rights reserved.</span>
             </p>
             <Link
               href="mailto:help@ubenai.com"
               className="flex items-center text-gray-600 hover:text-gray-800"
             >
               <div className="footer-bot_link-icon w-6 h-6 mr-2 text-gray-800">
-                <EmailIcons/>
+                <EmailIcons />
               </div>
               help@ubenai.com
             </Link>

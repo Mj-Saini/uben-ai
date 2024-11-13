@@ -13,7 +13,7 @@ export default function Home() {
         });
       }, []);
   return (
-    <div className="pt-32 pb-10">
+    <div className="pt-16 pb-10">
       <div className="container max-w-[1360px] mx-auto px-4">
         <div className="text-center lg:text-start ">
           <p className="text-[16px] text-[#FA421D] font-medium tracking-[.5px] ff_general_medium">
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-wrap flex-row justify-center lg:justify-start">
+        <div className="flex flex-wrap flex-row justify-center lg:justify-start sm:-mx-3 ">
           {contactUsCardData.map((card, i) => (
             <div
               key={i}
@@ -38,16 +38,16 @@ export default function Home() {
               <div
                 data-aos="flip-left"
                 data-aos-easing="ease-in-sine"
-                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px]"
+                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb]"
               >
                 <span>{card.svg_img}</span>
                 <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px]ff_general_medium mt-5">
                   {card.Heading}
                 </p>
-                <p className="text-[#6B7280] text-base mt-[5px]">
+                <p className="text-[#6B7280] text-base mt-3">
                   {card.peragraph}
                 </p>
-                <p className="text-[#6B7280] text-base pb-4F">{card.per}</p>
+                <p className="text-[#6B7280] text-base pb-4">{card.per}</p>
 
                 <Link
                   href={`mailto:${card.content}`}

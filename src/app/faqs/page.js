@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
    
-    <div className="pt-32 pb-12 bg-bg_img_gradient bg-cover bg-no-repeat bg-top">
+    <div className="pt-16 pb-12 bg-bg_img_gradient bg-cover bg-no-repeat bg-top">
       <div className="container max-w-[1360px] mx-auto px-4">
         <div className="">
           <p  data-aos="fade-up"
@@ -26,14 +26,14 @@ export default function Home() {
               data-aos-easing="ease-in-sine"  className="text-[#fa421d] text-sm lg:text-base">Help</p>
           <h2  data-aos="fade-up"
               data-aos-offset="100"
-              data-aos-delay="200"
+              data-aos-delay="100"
               data-aos-easing="ease-in-sine"  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold mt-2 ff_general_semibold">
             Common Questions
           </h2>
 
           <p  data-aos="fade-up"
               data-aos-offset="100"
-              data-aos-delay="300"
+              data-aos-delay="100"
               data-aos-easing="ease-in-sine"  className="text-lg lg:text-xl font-normal text-[#4b5563] my-6">
             Everything you need to know about Üben AI. Still have questions?{" "}
             <Link className="text-[#292524] font-medium " href="">
@@ -46,8 +46,8 @@ export default function Home() {
           {faqsData.map((faq, index) => (
             <div
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-delay="200"
+            data-aos-offset="100"
+            data-aos-delay="100"
             data-aos-easing="ease-in-sine" 
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 flex flex-col"

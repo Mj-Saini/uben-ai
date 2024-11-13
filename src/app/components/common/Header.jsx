@@ -24,21 +24,21 @@ const Header = () => {
     <div className=" sticky top-0 w-full z-10">
      
   
-      <div className={`duration-300 bg-[#FBFBFB] shadow-sm`}>
+      <div className={`duration-300 bg-[#FBFBFB] `}>
         <div  data-aos="fade-down"data-aos-offset="100"
           className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
         >
           <Link href="/">
             <Image
-              className={`w-28 sm:w-32 md:w-[180px] `}
+              className={`w-28 sm:w-32 md:w-[160px] `}
               src={logo}
               alt="logo"
             />
           </Link>
 
           <div
-            className={`flex gap-5 xl:gap-8 max-lg:fixed top-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-center flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-transparent duration-300 z-10 ${
-              !toggleNav ? "-left-full" : "left-0"
+            className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-transparent duration-300 z-10 ${
+              !toggleNav ? "!-top-[100vh]" : "top-[71px]"
             }`}
           >
             {headerData.map((tab, index) => (
@@ -54,16 +54,22 @@ const Header = () => {
                   {tab.tabs}
                 </Link>
               </div>
+              
             ))}
+             <CommonBtn
+                    path="/"
+                    btnName="Download App"
+                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full"
+                  />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
             {" "}
-            <div className="flex gap-1.5 sm:gap-2.5">
+            <div className=" gap-1.5 sm:gap-2.5 hidden lg:flex">
            
                   <CommonBtn
                     path="/"
                     btnName="Download App"
-                    btnStyling="text-black bg-[#fcd34d] !font-medium"
+                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize"
                   />
               
             

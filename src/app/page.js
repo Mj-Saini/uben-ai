@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="bg_liner_section pt-12 pb-10 lg:pb-0 lg:h-screen">
+      <section className="bg_liner_section pt-12 pb-10 lg:pb-0">
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
@@ -103,12 +103,11 @@ export default function Home() {
                   className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
-                    I downloaded several apps and kept only the best ones. And I
-                    think Üben is one of them.
+                  {items.description}
                   </p>
                   <div className="flex justify-between items-center mt-8">
                     <h3 className="text-[#292524] text-base lg:text-lg font-medium">
-                      Abir, Morocco
+                    {items.name}
                     </h3>
                     <div className="flex gap-2">
                       {[...Array(5)].map((_, index) => (
@@ -137,18 +136,19 @@ export default function Home() {
           <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between gap-10 md:gap-0">
             <div
               data-aos="fade-up"
-              data-aos-offset="300"
+              data-aos-offset="100"
               data-aos-easing="ease-in-sine"
               className="w-full sm:w-8/12 lg:w-5-/12 flex flex-col items-center"
             >
-              <Image className="w-[565px]" src={bestWayToLearn} alt="phone2" />
+              <Image className="w-[504px]" src={bestWayToLearn} alt="phone2" />
               <div className="flex justify-start mt-6">
                 <Link
                   data-aos="fade-up"
-                  data-aos-offset="300"
+                  data-aos-offset="100"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="200"
-                  href=""
+                  data-aos-delay="100"
+                  href="https://www.apple.com/in/app-store/"
+                  target="_black"
                   className="section2_video-link play_store w-inline-block"
                 >
                   <Image
@@ -161,20 +161,20 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="w-full  lg:w-7/12">
+            <div className="w-full lg:w-6/12">
               <div
                 data-aos="fade-up"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
-                <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%]">
+                <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%] ">
                   The best way to learn a language is through practice
                 </h2>
                 <div className="flex items-start  mt-4">
                   <div>
                     <PensilIcons />
                   </div>
-                  <p className="text-[16px] md:text-[20px] text-[#000000] ms-2">
+                  <p className="text-[16px] md:text-[20px] text-[#4b5563] ms-2">
                     Practice personalized exercises that get you speaking and
                     writing German
                   </p>
@@ -184,7 +184,7 @@ export default function Home() {
                   <div>
                     <CommentIcons />
                   </div>
-                  <p className="text-[16px] md:text-[20px] text-[#000000] ms-2">
+                  <p className="text-[16px] md:text-[20px] text-[#4b5563] ms-2">
                     Get feedback on your work and explanations for how to
                     improve
                   </p>
@@ -193,7 +193,7 @@ export default function Home() {
                   <div>
                     <TrackIcons />
                   </div>
-                  <p className="text-[16px] md:text-[20px] text-[#000000] ms-2">
+                  <p className="text-[16px] md:text-[20px] text-[#4b5563] ms-2">
                     Track your progress and be amazed by what you learn
                   </p>
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
                   <div>
                     <BookIcons />
                   </div>
-                  <p className="text-[16px] md:text-[20px] text-[#000000] ms-2">
+                  <p className="text-[16px] md:text-[20px] text-[#4b5563] ms-2">
                     Ace German grammar including noun genders, adjective
                     declensions and 140 other topics
                   </p>
@@ -228,9 +228,9 @@ export default function Home() {
             <div className="hidden lg:flex">
               <Image
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
-                className=""
+                className="w-[900px] mx-auto"
                 src={stackTable}
                 alt=""
                 loading="lazy"
@@ -268,7 +268,7 @@ export default function Home() {
                 <CommonBtn
                   path="/"
                   btnName="Start learning for free now"
-                  btnStyling="text-black bg-[#fcd34d] !text-base !font-medium w-[240px] py-3"
+                  btnStyling="text-[#292524] bg-[#fcd34d] !text-base !font-medium w-[260px] py-3"
                 />
               </Link>
             </div>
