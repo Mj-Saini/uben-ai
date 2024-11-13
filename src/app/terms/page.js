@@ -11,7 +11,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="pt-32">
+    <div className="pt-14 md:pt-24">
       <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
         <div className="w-full sm:w-10/12 lg:w-7/12 mx-auto">
           <h2 className=" font-medium text-base text-[#fa421d] pb-2">Terms</h2>
