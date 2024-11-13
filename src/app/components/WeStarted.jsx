@@ -40,7 +40,7 @@ const WeStarted = () => {
             </div>
 
             <div className="w-full lg:w-4/12 mt-6 lg:mt-0">
-              <h3 data-aos="fade-up" data-aos-delay="100"  data-aos-easing="ease-in-sine" className="text-2xl md:text-[32px] text-black font-semibold text-center ff_general_semibold">
+              <h3 data-aos="fade-up" data-aos-delay="100"  data-aos-easing="ease-in-sine" className="text-2xl md:text-[32px] text-black font-semibold text-center ff_general_semibold ">
                 Download the app now and start learning.
               </h3>
           

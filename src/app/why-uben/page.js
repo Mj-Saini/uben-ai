@@ -22,7 +22,7 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 ">
           <h2   data-aos="fade-up"
               data-aos-offset="300"
-              data-aos-easing="ease-in-sine" className="text-sm font-semibold text-red-600 mb-2 text-center">Why Üben?</h2>
+              data-aos-easing="ease-in-sine" className="text-base font-semibold text-red-600 mb-2 text-center tracking-[0.5px]">Why Üben?</h2>
           <h1   data-aos="fade-up"
               data-aos-offset="300"
               data-aos-delay="200"
@@ -34,7 +34,7 @@ export default function Home() {
         <p data-aos="fade-right"
               data-aos-offset="300"
               data-aos-delay="200"
-              data-aos-easing="ease-in-sine" className="text-gray-500 mb-6 lg:mb-12 px-10 mt-8 lg:mt-14 text-[14px] lg:text-[20px]">
+              data-aos-easing="ease-in-sine" className="text-gray-500 mb-6 lg:mb-12 mt-8 lg:mt-14 text-[14px] lg:text-[20px]">
           Üben was founded in 2024 by a group who saw the potential of AI to
           revolutionize language learning.
         </p>
@@ -93,10 +93,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/* Main Features */}
       <div className="container max-w-[1360px] mx-auto px-4 ">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-          <div className="w-full sm:w-9/12 md:w-7/12 lg:w-7/12">
+          <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10">
             <div data-aos="fade-right"
               data-aos-offset="300"
               data-aos-delay="200"
@@ -145,10 +145,10 @@ export default function Home() {
           <div data-aos="fade-right"
               data-aos-offset="300"
               data-aos-delay="200"
-              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5-/12">
+              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12">
             <Image className="w-[565px]" src={whyChoosePhnImg} alt="phone2" />
           </div>
-          <div className="w-full sm:w-9/12 lg:w-7/12">
+          <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
             <div data-aos="fade-left"
               data-aos-offset="300"
               data-aos-delay="200"
