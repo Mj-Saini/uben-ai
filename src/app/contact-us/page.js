@@ -16,7 +16,7 @@ export default function Home() {
     <div className="pt-32 pb-10">
       <div className="container max-w-[1360px] mx-auto px-4">
         <div className="text-center lg:text-start ">
-          <p className="text-[16px] text-[#FA421D] font-medium tracking-[.5px]">
+          <p className="text-[16px] text-[#FA421D] font-medium tracking-[.5px] ff_general_medium">
             Contact us
           </p>
           <p className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold">

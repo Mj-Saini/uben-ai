@@ -18,13 +18,13 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className=" pt-36 pb-12 ">
+      <section className="pt-24 md:pt-36 pb-12 ">
         <div className="container max-w-[1360px] mx-auto px-4 ">
           <h2
             data-aos="fade-up"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            className="text-sm font-semibold text-red-600 mb-2 text-center"
+            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px]"
           >
             Pricing
           </h2>
@@ -33,7 +33,7 @@ export default function Home() {
             data-aos-offset="300"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
-            className="text-[15px] lg:text-[56px] font-bold text-gray-900 mb-4 leading-[150%] text-center ff_general_semibold"
+            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 leading-[150%] text-center ff_general_semibold"
           >
             Choose the Plan That&apos;s Right for You
           </h1>
@@ -43,15 +43,15 @@ export default function Home() {
             data-aos-offset="300"
             data-aos-delay="200"
             data-aos-easing="ease-in-sine"
-            className="text-gray-500 mb-6 lg:mb-12 px-10 mt-8 lg:mt-14 text-[14px] lg:text-[20px] "
+            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center "
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
             billed via the App Store or Google Play Store after a 7-day free
             trial.
           </p>
 
-          <div className="flex flex-wrap justify-center pt-32  bg-Prices_gradient bg-cover bg-no-repeat bg-top">
-            <div className="w-full md:w-1/2 xl:w-4/12 p-3">
+          <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
+            <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
               <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg p-6">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl ff_general_semibold">Monthly plan</h3>
@@ -118,10 +118,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 xl:w-4/12 p-3 relative">
+            <div className="w-full md:w-1/2 xl:w-5/12 mt-5 md:mt-0 md:p-3 relative">
               <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg p-6">
                 <Image
-                  className={`w-28 sm:w-32 md:w-[180px] absolute -top-20 right-0 hidden md:block`}
+                  className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0 hidden md:block`}
                   src={saveImg}
                   alt="logo"
                 />

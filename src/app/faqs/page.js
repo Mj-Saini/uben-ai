@@ -18,7 +18,7 @@ export default function Home() {
     <>
    
     <div className="pt-32 pb-12 bg-bg_img_gradient bg-cover bg-no-repeat bg-top">
-      <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
+      <div className="container max-w-[1360px] mx-auto px-4">
         <div className="">
           <p  data-aos="fade-up"
               data-aos-offset="100"
