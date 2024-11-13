@@ -80,11 +80,11 @@ export const Footer = () => {
           <div className="my-10 border-t border-image-border_gradient"></div>
 
           {/* Bottom section with copyright and email */}
-          <div className=" flex flex-wrap gap-3 justify-center sm:justify-between items-center">
-            <p className=" text-gray-600 text-center sm:text-start">
-            Copyright {currentYear} Üben AI. <span className="sm:block"> All rights reserved.</span>
+          <div className=" flex flex-wrap gap-3 justify-start sm:justify-between items-center">
+            <p className=" text-gray-600 text-start">
+            Copyright {currentYear} Üben AI. <span className="block"> All rights reserved.</span>
             </p>
-            <a
+            <Link
               href="mailto:help@ubenai.com"
               className="flex items-center text-gray-600 hover:text-gray-800"
             >
@@ -92,7 +92,7 @@ export const Footer = () => {
                 <EmailIcons/>
               </div>
               help@ubenai.com
-            </a>
+            </Link>
           </div>
         </div>
       </div>
