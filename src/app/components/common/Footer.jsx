@@ -42,7 +42,7 @@ export const Footer = () => {
                     </Link>
                     <Link
                     data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="300" 
-                      href="/pricing"
+                      href="/prices"
                       className="font-normal text-[#292524] text-base hover:text-black"
                     >
                       Prices
@@ -62,13 +62,7 @@ export const Footer = () => {
                     >
                       contact us
                     </Link>
-                    <Link
-                    data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="300" 
-                      href="/pricing"
-                      className="font-normal text-[#292524] text-base hover:text-black"
-                    >
-                      Prices
-                    </Link>{" "}
+                  
                     <Link
                     data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"data-aos-delay="400" 
                       href="/faqs"
