@@ -59,7 +59,7 @@ const Header = () => {
              <CommonBtn
                     path="/"
                     btnName="Download App"
-                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full"
+                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full lg:hidden"
                   />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
