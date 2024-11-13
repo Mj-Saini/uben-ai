@@ -11,8 +11,17 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      borderImage: {
+       'border_gradient': "linear-gradient(90deg,  #29252400, #2925244d 50%, #29252400)", 
+      },
       backgroundImage: {
+        'bg_gradient': "linear-gradient(to right, #F0F4FF, #FFFFFF)", 
         'yellow_gradient': "linear-gradient(90deg, #f8b410, #f6a60d)", 
+        'homeCard_gradient': "linear-gradient(135deg, #eef2ff, #fff 50%, #fafafa)", 
+        'aboutHero_gradient': " linear-gradient(155deg, #eef2ff, #fff 50%, #fefce8)", 
+        'yellow_bg_gradient': " linear-gradient(225deg, #fff0, #fff),linear-gradient(90deg, #facc15, #f59e0b)", 
+        bg_img_gradient:"url('/images/png/faq-bg-gradient.png')"
+        
       },
     },
   },

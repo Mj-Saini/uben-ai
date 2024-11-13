@@ -2,20 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: generalBold;
+  src: url('../../public/fonts/GeneralSans-Bold.otf');
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: generalMedium;
+  src: url('../../public/fonts/GeneralSans-Medium.otf');
+}
+@font-face {
+  font-family: generalRagular;
+  src: url('../../public/fonts/GeneralSans-Regular.otf');
+}
+@font-face {
+  font-family: generalSemibold;
+  src: url('../../public/fonts/GeneralSans-Semibold.otf');
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+ 
+  background:white ;
+  font-family: generalRagular;
+}
+
+.ff_general_semibold{
+  font-family: generalSemibold;
+}
+.ff_general_medium{
+  font-family: generalMedium;
+}
+.ff_general_bold{
+  font-family: generalBold;
 }

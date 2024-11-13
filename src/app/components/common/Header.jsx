@@ -25,7 +25,7 @@ const Header = () => {
      
   
       <div className={`duration-300 bg-[#FBFBFB] shadow-sm`}>
-        <div
+        <div  data-aos="fade-down"data-aos-offset="100"
           className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
         >
           <Link href="/">
@@ -37,7 +37,7 @@ const Header = () => {
           </Link>
 
           <div
-            className={`flex gap-5 xl:gap-8 max-lg:fixed top-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-center flex-col lg:!flex-row bg-[#FFFFFF80] lg:bg-transparent duration-300 z-10 ${
+            className={`flex gap-5 xl:gap-8 max-lg:fixed top-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-center flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-transparent duration-300 z-10 ${
               !toggleNav ? "-left-full" : "left-0"
             }`}
           >
@@ -60,14 +60,12 @@ const Header = () => {
             {" "}
             <div className="flex gap-1.5 sm:gap-2.5">
            
-                <>
                   <CommonBtn
                     path="/"
                     btnName="Download App"
                     btnStyling="text-black bg-[#fcd34d] !font-medium"
                   />
-                 
-                </>
+              
             
             </div>
             <div
