@@ -7,10 +7,6 @@ import CommonBtn from "./CommonBtn";
 import { usePathname } from "next/navigation";
 import { headerData } from "./Helper";
 
-
-
-
-
 const Header = () => {
   const location = usePathname();
   const [toggleNav, setToggleNav] = useState(false);
@@ -19,13 +15,12 @@ const Header = () => {
     document.body.style.overflow = toggleNav ? "clip" : "auto";
   }, [toggleNav]);
 
-
   return (
     <div className=" sticky top-0 w-full z-10">
-     
-  
       <div className={`duration-300 bg-[#FBFBFB] `}>
-        <div  data-aos="fade-down"data-aos-offset="100"
+        <div
+          data-aos="fade-down"
+          data-aos-offset="100"
           className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
         >
           <Link href="/">
@@ -46,33 +41,27 @@ const Header = () => {
                 <Link
                   href={tab.path}
                   className={`font-normal text-base capitalize flex items-center gap-3 justify-between duration-300 hover:text-black ${
-                    location === tab.path
-                      ? "text-black"
-                      : "text-[#292524]"
+                    location === tab.path ? "text-black" : "text-[#292524]"
                   }`}
                 >
                   {tab.tabs}
                 </Link>
               </div>
-              
             ))}
-             <CommonBtn
-                    path="/"
-                    btnName="Download App"
-                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full lg:hidden"
-                  />
+            <CommonBtn
+              path="/"
+              btnName="Download App"
+              btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full lg:hidden"
+            />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
             {" "}
             <div className=" gap-1.5 sm:gap-2.5 hidden lg:flex">
-           
-                  <CommonBtn
-                    path="/"
-                    btnName="Download App"
-                    btnStyling="text-[#292524] bg-[#fcd34d] capitalize"
-                  />
-              
-            
+              <CommonBtn
+                path="/"
+                btnName="Download App"
+                btnStyling="text-[#292524] bg-[#fcd34d] capitalize"
+              />
             </div>
             <div
               onClick={() => setToggleNav(!toggleNav)}
