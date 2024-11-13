@@ -1,101 +1,65 @@
 import Image from "next/image";
+import Link from "next/link";
+import logoIcon from '../../public/images/svg/logi-icon.svg'
+import heroImg from '../../public/images/png/hero-right-img.png'
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div >
+     {/*  HERO SECTION*/}
+     <section className="bg-[#F9FBFF] pt-32">
+      <div className="container max-w-[1360px] mx-auto px-4 md:px-8">
+        <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-16">
+       <div className="w-full lg:w-7/12 pe-10">
+           {/* Left Content */}
+           <div className="hero_content space-y-4">
+            <div className="hero_small-image">
+              <Image
+                src={logoIcon}
+                alt="small illustration"
+                width={100} 
+                height={100} 
+                className="image"
+              />
+            </div>
+            <h1 className=" text-4xl md:text-5xl lg:text-[56px] font-semibold text-[black] !leading-[150%]">
+              The ✨<span className="span_gradient bg-yellow_gradient bg-clip-text text-transparent">magical</span>✨ new way to learn German
+            </h1>
+            <p className="text-color-riverbed text-lg text-gray-600">
+              Learn from 200+ lessons from A1 to B2 and practice your new skills online. Üben is your personalized AI
+              language tutor that gets you writing and speaking{" "}
+              <span className="font-semibold">better</span> and <span className="font-semibold">faster</span>.
+            </p>
+            <div className="button-text_wrapper flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4 items-center">
+              <Link
+                href=""
+                target="_blank"
+              >
+              
+                  Get Started
+              
+              </Link>
+              <p className="text-color-palesky text-sm text-gray-500">Free for 7 days. Then billed annually.</p>
+            </div>
+          </div>
+       </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          {/* Right Image */}
+          <div className="w-full sm:w-9/12 lg:w-5/12 relative">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={heroImg}
+              alt="main hero image"
+              width={1000} // adjust as needed
+              height={1000} // adjust as needed
+              className="hero_image w-full h-auto"
+              sizes="(max-width: 991px) 100vw, (max-width: 3125px) 32vw, 1000px"
+              loading="lazy"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+    </section>
     </div>
   );
 }
