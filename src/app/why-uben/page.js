@@ -16,7 +16,7 @@ export default function Home() {
       }, []);
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {/*  HERO SECTION*/}
       <section className="bg-aboutHero_gradient pt-36 pb-12">
         <div className="container max-w-[1360px] mx-auto px-4 ">

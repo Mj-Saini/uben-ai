@@ -21,7 +21,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <div>
+    <div className="overflow-hidden">
       {/*  HERO SECTION*/}
       <section className="bg-bg_gradient pt-32 pb-10">
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
