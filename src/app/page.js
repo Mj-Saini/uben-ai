@@ -102,7 +102,7 @@ export default function Home() {
                   data-aos-easing="ease-in-sine"
                   className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10"
                 >
-                  <p className="text-[#292524] text-sm lg:text-lg lg:text-xl w-[90%] sm:w-full">
+                  <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
                     I downloaded several apps and kept only the best ones. And I
                     think Üben is one of them.
                   </p>
