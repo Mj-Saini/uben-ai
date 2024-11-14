@@ -6,7 +6,7 @@ import AOS from "aos";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration
+      duration: 300, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);

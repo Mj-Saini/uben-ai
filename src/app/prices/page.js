@@ -10,10 +10,13 @@ import saveImg from "../../../public/images/png/save-img.png";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration
+      duration: 300, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);
+
+
+  
 
   return (
     <div className="overflow-hidden">
@@ -121,7 +124,7 @@ export default function Home() {
 
                 <div className="mt-5">
                   <CommonBtn
-                    path="/"
+                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                     btnName="Get started"
                     btnStyling="text-black bg-[#fcd34d] !font-medium"
                   />
@@ -205,7 +208,7 @@ export default function Home() {
 
                 <div className="mt-5">
                   <CommonBtn
-                    path="/"
+                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                     btnName="Get started"
                     btnStyling="text-black bg-[#fcd34d] !font-medium"
                   />

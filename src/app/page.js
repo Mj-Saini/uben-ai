@@ -18,7 +18,7 @@ import { BookIcons, CommentIcons, PensilIcons, RightTikkIcons, TrackIcons } from
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration
+      duration: 300, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);
@@ -58,7 +58,7 @@ export default function Home() {
                 </p>
 
                 <CommonBtn
-                  path="/"
+                  path="/https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                   btnName="Get Started"
                   btnStyling="text-[#292524] bg-[#fcd34d] w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
                 />
@@ -164,7 +164,7 @@ export default function Home() {
             <div className="w-full lg:w-6/12">
               <div
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
               >
                 <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%] ">
@@ -257,20 +257,13 @@ export default function Home() {
                 We’re confident you’ll like it. So we’re giving you 7-day
                 unlimited access for free.
               </p>
-              <Link
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                href="https://play.google.com/store/apps/details?id=com.ubenai.android&amp;pli=1"
-                className="button get-started w-inline-block"
-                target="_blank"
-              >
+            
                 <CommonBtn
-                  path="/"
+                  path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                   btnName="Start learning for free now"
                   btnStyling="text-[#292524] bg-[#fcd34d] !text-base !font-medium w-[260px] py-3"
                 />
-              </Link>
+           
             </div>
           </div>
         </div>
