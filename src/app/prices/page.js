@@ -22,8 +22,7 @@ export default function Home() {
         let chngjson = await fetchdata.json();
         setCountryName(chngjson.currency);
         console.log("-------------------------------");
-        
-      } catch (error) {        
+      } catch (error) {
         setCountryName("USD");
       }
     }
@@ -169,12 +168,6 @@ export default function Home() {
     VND: "₫",
   };
 
-
-  
-
-
-  
-
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
@@ -212,79 +205,80 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg p-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
-                    Monthly plan
-                  </h3>
-                  <span className="px-2.5 py-0.5 text-xs lg:text-sm ff_general_semibold border border-yellow-500 text-yellow-600 bg-yellow-100 rounded-full">
-                    Popular
-                  </span>
-                </div>
+              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+                <div className=" p-6">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
+                      Monthly plan
+                    </h3>
+                    <span className="px-2.5 py-0.5 text-xs lg:text-sm ff_general_semibold border border-yellow-500 text-yellow-600 bg-yellow-100 rounded-full">
+                      Popular
+                    </span>
+                  </div>
 
-                <div className="mt-4">
-                  <div className="flex">
-                    <div className="mt-3">
-                      <span className="text-2xl sm:text-3xl lg:text-4xl text-[#323333] ff_general_semibold leading-[120%]">
-                        {currencySymbols[countryName]}
-                      </span>
-                    </div>
-                    <div className="flex items-end">
-                      <span className="text-3xl sm:text-4xl lg:text-6xl ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
-                        {priceData.monthly[countryName]}
-                      </span>
-                      <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base mb-2">
-                        {" "}
-                        /month
-                      </span>
+                  <div className="mt-4">
+                    <div className="flex">
+                      <div className="mt-3">
+                        <span className="text-2xl sm:text-3xl lg:text-4xl text-[#323333] ff_general_semibold leading-[120%]">
+                          {currencySymbols[countryName]}
+                        </span>
+                      </div>
+                      <div className="flex items-end">
+                        <span className="text-3xl sm:text-4xl lg:text-6xl ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
+                          {priceData.monthly[countryName]}
+                        </span>
+                        <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base mb-2">
+                          {" "}
+                          /month
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-4 space-y-3">
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3 text-[#6b7280]">
-                      Access to 200+ lessons
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Unlimited GPT-powered practice sessions
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Vocabulary lists by CEFR level
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3 text-[#6b7280]">
-                      Spaced-repetition review
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Grammar guides written by experts
-                    </span>
-                  </p>
+                  <div className="mt-4 space-y-3">
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3 text-[#6b7280]">
+                        Access to 200+ lessons
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3  text-[#6b7280]">
+                        Unlimited GPT-powered practice sessions
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3  text-[#6b7280]">
+                        Vocabulary lists by CEFR level
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3 text-[#6b7280]">
+                        Spaced-repetition review
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3  text-[#6b7280]">
+                        Grammar guides written by experts
+                      </span>
+                    </p>
+                  </div>
                 </div>
-
-                <div className="mt-5">
+                <div className="py-5 bg-[#f9fafb] rounded-b-3xl px-6">
                   <CommonBtn
                     path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                     btnName="Get started"
@@ -294,89 +288,91 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 xl:w-5/12 mt-14 md:mt-0 md:p-3 relative">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg p-6">
-                <Image
-                  className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0`}
-                  src={saveImg}
-                  alt="logo"
-                />
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
-                    Yearly plan
-                  </h3>
-                </div>
+              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+                <div className="  p-6">
+                  <Image
+                    className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0`}
+                    src={saveImg}
+                    alt="logo"
+                  />
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
+                      Yearly plan
+                    </h3>
+                  </div>
 
-                <div className="mt-4">
-                  <div className="flex">
-                    <div className="mt-3">
-                      <span className="text-2xl sm:text-3xl lg:text-4xl ff_general_semibold leading-[120%]">
-                        {currencySymbols[countryName]}
-                      </span>
-                    </div>
-                    <div className="flex items-end">
-                      <span className="text-3xl sm:text-4xl lg:text-6xl text-[#323333] ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
-                        {priceData.annual[countryName]}
-                      </span>
-                      <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base mb-2 mb-2">
-                        {" "}
-                        /month(Billed annually at 9900.00)
-                      </span>
+                  <div className="mt-4">
+                    <div className="flex">
+                      <div className="mt-3">
+                        <span className="text-2xl sm:text-3xl lg:text-4xl ff_general_semibold leading-[120%]">
+                          {currencySymbols[countryName]}
+                        </span>
+                      </div>
+                      <div className="flex items-end">
+                        <span className="text-3xl sm:text-4xl lg:text-6xl text-[#323333] ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
+                          {priceData.annual[countryName]}
+                        </span>
+                        <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base  mb-2">
+                          {" "}
+                          /month(Billed annually at 9900.00)
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-4 space-y-3">
-                  <p className="flex items-center">
-                    <span>
+                  <div className="mt-4 space-y-3">
+                    <p className="flex items-center">
+                      <span>
+                        <span>
+                          <PricingTikkIcons />
+                        </span>
+                      </span>
+                      <span className="ml-3 text-[#6b7280]">
+                        Access to 200+ lessons
+                      </span>
+                    </p>
+                    <p className="flex items-center">
                       <span>
                         <PricingTikkIcons />
                       </span>
-                    </span>
-                    <span className="ml-3 text-[#6b7280]">
-                      Access to 200+ lessons
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Unlimited GPT-powered practice sessions
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Vocabulary lists by CEFR level
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3 text-[#6b7280]">
-                      Spaced-repetition review
-                    </span>
-                  </p>
-                  <p className="flex items-center">
-                    <span>
-                      <PricingTikkIcons />
-                    </span>
-                    <span className="ml-3  text-[#6b7280]">
-                      Grammar guides written by experts
-                    </span>
-                  </p>
-                </div>
+                      <span className="ml-3  text-[#6b7280]">
+                        Unlimited GPT-powered practice sessions
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3  text-[#6b7280]">
+                        Vocabulary lists by CEFR level
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3 text-[#6b7280]">
+                        Spaced-repetition review
+                      </span>
+                    </p>
+                    <p className="flex items-center">
+                      <span>
+                        <PricingTikkIcons />
+                      </span>
+                      <span className="ml-3  text-[#6b7280]">
+                        Grammar guides written by experts
+                      </span>
+                    </p>
+                  </div>
 
-                <div className="mt-5">
-                  <CommonBtn
-                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
-                    btnName="Get started"
-                    btnStyling="text-black bg-[#fcd34d] !font-medium"
-                  />
                 </div>
+                  <div  className="py-5 bg-[#f9fafb] rounded-b-3xl px-6">
+                    <CommonBtn
+                      path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                      btnName="Get started"
+                      btnStyling="text-black bg-[#fcd34d] !font-medium"
+                    />
+                  </div>
               </div>
             </div>
           </div>
