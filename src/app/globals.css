@@ -4,38 +4,53 @@
 
 @font-face {
   font-family: generalBold;
-  src: url('../../public/fonts/GeneralSans-Bold.otf');
+  src: url("../../public/fonts/GeneralSans-Bold.otf");
 }
 @font-face {
   font-family: generalMedium;
-  src: url('../../public/fonts/GeneralSans-Medium.otf');
+  src: url("../../public/fonts/GeneralSans-Medium.otf");
 }
 @font-face {
   font-family: generalRagular;
-  src: url('../../public/fonts/GeneralSans-Regular.otf');
+  src: url("../../public/fonts/GeneralSans-Regular.otf");
 }
 @font-face {
   font-family: generalSemibold;
-  src: url('../../public/fonts/GeneralSans-Semibold.otf');
+  src: url("../../public/fonts/GeneralSans-Semibold.otf");
 }
 
 body {
- 
-  background:white ;
+  background: white;
   font-family: generalRagular;
 }
 
-.ff_general_semibold{
+.ff_general_semibold {
   font-family: generalSemibold;
 }
-.ff_general_medium{
+.ff_general_medium {
   font-family: generalMedium;
 }
-.ff_general_bold{
+.ff_general_bold {
   font-family: generalBold;
 }
 
-
-.bg_liner_section{
+.bg_liner_section {
   background: linear-gradient(155deg, #eef2ff, #fff 50%, #fafafa);
+}
+
+.div {
+  background-image: linear-gradient(225deg, #fff0, #fff),
+    linear-gradient(90deg, #facc15, #f59e0b);
+  position: relative;
+}
+
+.box {
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  background-image: url("https://cdn.discordapp.com/attachments/1257987764440535161/1306646362632491088/we-started-img.png?ex=67376cc1&is=67361b41&hm=03767d8def673757f26fdc2e08e79c9397669f1b3712fe2d8bf1e336bc3bcc26&");
+  background-position: 50%;
+  background-size: cover;
+  position: absolute;
+  inset: 0%;
+  z-index: 90;
 }
