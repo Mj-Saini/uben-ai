@@ -1,7 +1,7 @@
-import React from 'react'
-import { RightTikkIcons } from './common/Icons'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import { RightTikkIcons } from "./common/Icons";
+import Link from "next/link";
+import Image from "next/image";
 
 import appStore from "../../../public/images/png/app-store.png";
 
@@ -10,6 +10,7 @@ const WeStarted = () => {
     <div>
       <section className="py-16 bg-white">
         <div className="container max-w-[1360px] mx-auto px-4 ">
+        
           <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 bg-yellow_bg_gradient rounded-[40px] border border-[#ffdea9] overflow-hidden">
             <div className="w-full lg:w-1/2">
               <h2
@@ -62,7 +63,6 @@ const WeStarted = () => {
                 </div>
               </div>
             </div>
-
             <div className="w-full lg:w-4/12 mt-6 lg:mt-0">
               <h3
                 data-aos="fade-up"
@@ -79,8 +79,8 @@ const WeStarted = () => {
                   data-aos-offset="100"
                   data-aos-easing="ease-in-sine"
                   data-aos-delay="100"
-                  target='_blank'
-            href="https://www.apple.com/in/app-store/"
+                  target="_blank"
+                  href="https://www.apple.com/in/app-store/"
                   className="section2_video-link play_store w-inline-block"
                 >
                   <Image
@@ -98,6 +98,6 @@ const WeStarted = () => {
       </section>
     </div>
   );
-}
+};
 
-export default WeStarted
+export default WeStarted;

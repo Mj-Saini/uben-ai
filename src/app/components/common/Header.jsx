@@ -49,7 +49,7 @@ const Header = () => {
               </div>
             ))}
             <CommonBtn
-              path="/"
+              path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
               btnName="Download App"
               btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full lg:hidden"
             />
@@ -58,7 +58,7 @@ const Header = () => {
             {" "}
             <div className=" gap-1.5 sm:gap-2.5 hidden lg:flex">
               <CommonBtn
-                path="/"
+                path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                 btnName="Download App"
                 btnStyling="text-[#292524] bg-[#fcd34d] capitalize"
               />

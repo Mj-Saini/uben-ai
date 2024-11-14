@@ -20,8 +20,10 @@ module.exports = {
         'homeCard_gradient': "linear-gradient(135deg, #eef2ff, #fff 50%, #fafafa)", 
         'aboutHero_gradient': " linear-gradient(155deg, #eef2ff, #fff 50%, #fefce8)", 
         'yellow_bg_gradient': " linear-gradient(225deg, #fff0, #fff),linear-gradient(90deg, #facc15, #f59e0b)", 
+       
         'Prices_gradient': "url('/images/png/pricing-bg-img.png')", 
-        bg_img_gradient:"url('/images/png/faq-bg-gradient.png')"
+        bg_img_gradient:"url('/images/png/faq-bg-gradient.png')",
+        bg_img_westarted:"url('/images/png/we-started-img.png')"
         
       },
     },
