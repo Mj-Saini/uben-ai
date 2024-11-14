@@ -18,7 +18,7 @@ import { BookIcons, CommentIcons, PensilIcons, RightTikkIcons, TrackIcons } from
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
+      duration: 500, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);
