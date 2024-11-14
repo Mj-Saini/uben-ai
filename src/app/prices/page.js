@@ -21,6 +21,8 @@ export default function Home() {
       try {
         let chngjson = await fetchdata.json();
         setCountryName(chngjson.currency);
+        console.log("-------------------------------");
+        
       } catch (error) {        
         setCountryName("USD");
       }
