@@ -10,7 +10,7 @@ const WeStarted = () => {
     <div>
       <section className="py-16 bg-white">
         <div className="container max-w-[1360px] mx-auto px-4 ">
-        
+        <div className=" bg-bg_img_westarted rounded-[40px]">
           <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 bg-yellow_bg_gradient rounded-[40px] border border-[#ffdea9] overflow-hidden">
             <div className="w-full lg:w-1/2">
               <h2
@@ -94,7 +94,7 @@ const WeStarted = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </section>
     </div>
   );
