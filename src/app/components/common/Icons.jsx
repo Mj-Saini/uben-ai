@@ -67,9 +67,9 @@ export const Yellow4SquareIcons = () => {
           y2="-5.64393"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FC7326"></stop>
-          <stop offset="0.31" stop-color="#FEB132"></stop>
-          <stop offset="1" stop-color="#FFDC3B"></stop>
+          <stop stopColor="#FC7326"></stop>
+          <stop offset="0.31" stopColor="#FEB132"></stop>
+          <stop offset="1" stopColor="#FFDC3B"></stop>
         </linearGradient>
       </defs>
     </svg>
