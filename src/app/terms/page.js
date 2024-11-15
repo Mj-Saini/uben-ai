@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import WeStarted from "../components/WeStarted";
 
 export default function Home() {
