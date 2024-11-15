@@ -22,11 +22,11 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 ">
           <h2   data-aos="fade-up"
               data-aos-offset="100"
-              data-aos-easing="ease-in-sine" className="text-base ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px]">Why Üben?</h2>
+              data-aos-easing="ease-in-sine" className="text-base ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom">Why Üben?</h2>
           <h1   data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 lg:leading-[150%] text-center ff_general_semibold">
+              data-aos-easing="ease-in-sine" className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 lg:leading-[150%] text-center ff_general_semibold animate-bottom">
             We believe that language learning should be interactive,
             comprehensive, and practical.
           </h1>
@@ -34,17 +34,17 @@ export default function Home() {
         <p data-aos="fade-right"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center ">
+              data-aos-easing="ease-in-sine" className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-left">
           Üben was founded in 2024 by a group who saw the potential of AI to
           revolutionize language learning.
         </p>
       
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center">
             <div data-aos="fade-up"
-              data-aos-offset="300"
+              data-aos-offset="100"
               data-aos-delay="100"
               data-aos-easing="ease-in-sine" className="w-full">
-              <div className="flex flex-col justify-center md:justify-start mb-2">
+              <div className="flex flex-col justify-center md:justify-start mb-2 animate-bottom">
               <Yellow4SquareIcons/>
                 <h3 className="text-xl lg:text-2xl text-[#000000] text-left font-semibold mt-[16px] ff_general_semibold">
                   Interactive
@@ -57,9 +57,9 @@ export default function Home() {
             </div>
 
             <div data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-delay="200"
-              data-aos-easing="ease-in-sine" className="w-full">
+              data-aos-offset="100"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-sine" className="w-full animate-bottom">
               <div className="flex flex-col justify-center md:justify-start mb-2">
               <Yellow4SquareIcons/>
                 <h3 className=" text-xl lg:text-2xl text-[#000000] text-left font-semibold mt-3 ff_general_semibold">
@@ -76,9 +76,9 @@ export default function Home() {
             </div>
 
             <div data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-delay="300"
-              data-aos-easing="ease-in-sine" className="w-full">
+              data-aos-offset="100"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-sine" className="w-full animate-bottom">
               <div className="flex flex-col justify-center md:justify-start mb-2">
               <Yellow4SquareIcons/>
                 <h3 className="text-xl lg:text-2xl text-[#000000] text-left font-semibold mt-3 ff_general_semibold">
@@ -100,7 +100,7 @@ export default function Home() {
             <div data-aos="fade-right"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] ">
+              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-left">
               <h5 className="ff_general_semibold leading-[150%] text-lg lg:text-xl">
                 Main Features
               </h5>
@@ -137,7 +137,7 @@ export default function Home() {
           <div data-aos="fade-left"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12">
+              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-right">
             <Image  className="w-full lg:w-[565px]" src={mainFeaturePhnImg} alt="phone" />
           </div>
         </div>
@@ -145,18 +145,18 @@ export default function Home() {
           <div data-aos="fade-right"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12">
+              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-left">
             <Image className="w-[565px]" src={whyChoosePhnImg} alt="phone2" />
           </div>
           <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
             <div data-aos="fade-left"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] ">
+              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-right">
               <h5 className="font-semibold leading-[150%] text-[20px]">
                 Why Choose Us
               </h5>
-              <div className="flex items-start  mt-4">
+              <div className="flex items-start mt-4">
                <span><RightTikkIcons/></span>
                 <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
                   Innovative Technology: Leveraging AI to create a truly

@@ -54,3 +54,30 @@ body {
   inset: 0%;
   z-index: 90;
 }
+
+/* aos animation */
+
+
+.animate-left {
+  transform: translateX(-50px); /* Moves object 100px from its initial position */
+  opacity: 0;
+}
+.animate-right {
+  transform: translateX(50px); /* Moves object 100px from its initial position */
+  opacity: 0;
+}
+.animate-top {
+  transform: translateY(-50px); /* Moves object 100px from its initial position */
+  opacity: 0;
+}
+.animate-bottom {
+  transform: translateY(50px); /* Moves object 100px from its initial position */
+  opacity: 0;
+}
+
+/* AOS-triggered animation */
+[data-aos="fade-right"].aos-animate,
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0); /* Reset position */
+  opacity: 1;
+}

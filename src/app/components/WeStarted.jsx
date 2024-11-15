@@ -18,7 +18,7 @@ const WeStarted = () => {
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
                   data-aos-delay="100"
-                  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold ff_general_semibold"
+                  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold ff_general_semibold animate-bottom"
                 >
                   Ready to get started?
                 </h2>
@@ -27,7 +27,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-easing="ease-in-sine"
-                    className="flex gap-2 items-center "
+                    className="flex gap-2 items-center animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -40,7 +40,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-easing="ease-in-sine"
                     data-aos-delay="100"
-                    className="flex gap-2 items-center "
+                    className="flex gap-2 items-center animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -53,7 +53,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-easing="ease-in-sine"
                     data-aos-delay="100"
-                    className="flex gap-2 items-center "
+                    className="flex gap-2 items-center animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -69,7 +69,7 @@ const WeStarted = () => {
                   data-aos="fade-up"
                   data-aos-delay="100"
                   data-aos-easing="ease-in-sine"
-                  className="text-2xl md:text-[32px] text-black text-start lg:text-center ff_general_medium"
+                  className="text-2xl md:text-[32px] text-black text-start lg:text-center ff_general_medium animate-bottom"
                 >
                   Download the app now and start learning.
                 </h3>
@@ -82,7 +82,7 @@ const WeStarted = () => {
                     data-aos-delay="100"
                     target="_blank"
                     href="https://www.apple.com/in/app-store/"
-                    className="section2_video-link play_store w-inline-block"
+                    className="section2_video-link play_store w-inline-block animate-bottom"
                   >
                     <Image
                       src={appStore}

@@ -23,18 +23,18 @@ export default function Home() {
           <p  data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine"  className="text-[#fa421d] text-sm lg:text-base">Help</p>
+              data-aos-easing="ease-in-sine"  className="text-[#fa421d] text-sm lg:text-base animate-bottom">Help</p>
           <h2  data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine"  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold mt-2 ff_general_semibold">
+              data-aos-easing="ease-in-sine"  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold mt-2 ff_general_semibold animate-bottom ">
             Common Questions
           </h2>
 
           <p  data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine"  className="text-lg lg:text-xl font-normal text-[#4b5563] my-6">
+              data-aos-easing="ease-in-sine"  className="text-lg lg:text-xl font-normal text-[#4b5563] my-6 animate-bottom">
             Everything you need to know about Üben AI. Still have questions?{" "}
             <Link className="text-[#292524] font-medium " href="">
               Contact Us
@@ -50,7 +50,7 @@ export default function Home() {
             data-aos-delay="100"
             data-aos-easing="ease-in-sine" 
               key={index}
-              className="bg-white rounded-2xl shadow-md p-6 flex flex-col"
+              className="bg-white rounded-2xl shadow-md p-6 flex flex-col animate-bottom"
             >
               <h3 className="text-[#323333] font-semibold text-xl lg:text-2xl mb-2 ">
                 {faq.question}

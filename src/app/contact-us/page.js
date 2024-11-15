@@ -38,7 +38,7 @@ export default function Home() {
               <div
                 data-aos="flip-left"
                 data-aos-easing="ease-in-sine"
-                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb]"
+                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb] "
               >
                 <span>{card.svg_img}</span>
                 <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px]ff_general_medium mt-5">

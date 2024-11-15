@@ -177,7 +177,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px]"
+            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
           >
             Pricing
           </h2>
@@ -186,7 +186,7 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
-            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold"
+            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold animate-bottom"
           >
             Choose the Plan That&apos;s Right for You
           </h1>
@@ -196,7 +196,7 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
-            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center "
+            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
             billed via the App Store or Google Play Store after a 7-day free

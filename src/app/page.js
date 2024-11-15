@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
               data-aos="fade-right"
-              className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0"
+              className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-left "
             >
               {/* Left Content */}
               <div className="space-y-4">
@@ -71,7 +71,7 @@ export default function Home() {
             {/* Right Image */}
             <div
               data-aos="fade-left"
-              className="w-full sm:w-9/12 lg:w-5/12 relative"
+              className="w-full sm:w-9/12 lg:w-5/12 relative  animate-right"
             >
               <Image
                 src={heroImg}
@@ -138,7 +138,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-offset="100"
               data-aos-easing="ease-in-sine"
-              className="w-full sm:w-8/12 lg:w-5-/12 flex flex-col items-center"
+              className="w-full sm:w-8/12 lg:w-5-/12 flex flex-col items-center animate-bottom"
             >
               <Image className="w-[504px]" src={bestWayToLearn} alt="phone2" />
               <div className="flex justify-start mt-6">
@@ -146,10 +146,9 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-offset="100"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="100"
                   href="https://www.apple.com/in/app-store/"
                   target="_black"
-                  className="section2_video-link play_store w-inline-block"
+                  className="section2_video-link play_store w-inline-block animate-bottom"
                 >
                   <Image
                     src={appStore}
@@ -166,6 +165,7 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
+                className="animate-bottom"
               >
                 <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%] ">
                   The best way to learn a language is through practice
@@ -218,9 +218,9 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center gap-8 w-full md:w-3/4 mx-auto">
             <h2
               data-aos="fade-up"
-              data-aos-offset="300"
+              data-aos-offset="100"
               data-aos-easing="ease-in-sine"
-              className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold text-center"
+              className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold text-center animate-bottom"
             >
               We stack up well
             </h2>
@@ -230,29 +230,29 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
-                className="w-[900px] mx-auto"
+                className="w-[900px] mx-auto animate-bottom"
                 src={stackTable}
-                alt=""
+                alt="img"
                 loading="lazy"
               />
             </div>
             <div className=" lg:hidden">
               <Image
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
-                className=""
+                className="animate-bottom"
                 src={table_mobile}
-                alt=""
+                alt="button"
                 loading="lazy"
               />
             </div>
             <div className="flex items-center flex-col gap-5 max-w-[630px]">
               <p
                 data-aos="fade-up"
-                data-aos-offset="300"
+                data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
-                className="text-lg lg:text-xl font-normal text-center text-[#4b5563]"
+                className="text-lg lg:text-xl font-normal text-center text-[#4b5563] animate-bottom"
               >
                 We’re confident you’ll like it. So we’re giving you 7-day
                 unlimited access for free.
