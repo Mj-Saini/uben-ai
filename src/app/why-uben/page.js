@@ -8,12 +8,13 @@ import { RightTikkIcons, Yellow4SquareIcons } from "../components/common/Icons";
 
 export default function Home() {
   const animateRefs = useRef([]);
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-top"); // or animate-bottom
+            entry.target.classList.add("animate-top"); 
           }
         });
       },
