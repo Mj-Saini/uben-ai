@@ -7,6 +7,7 @@ import CommonBtn from "./CommonBtn";
 import { usePathname } from "next/navigation";
 import { headerData } from "./Helper";
 
+
 const Header = () => {
   const location = usePathname();
   const [toggleNav, setToggleNav] = useState(false);
@@ -15,12 +16,13 @@ const Header = () => {
     document.body.style.overflow = toggleNav ? "clip" : "auto";
   }, [toggleNav]);
 
+ 
+
   return (
     <div className=" sticky top-0 w-full z-10">
       <div className={`duration-300 bg-[#FBFBFB] `}>
         <div
           data-aos="fade-down"
-          data-aos-offset="100"
           className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
         >
           <Link href="/">

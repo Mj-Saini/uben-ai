@@ -1,26 +1,44 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import logo from "../../../../public/images/png/logo.png";
 
 import { EmailIcons } from "./Icons";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const animateRefs = useRef([]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-top"); // or animate-bottom
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    animateRefs.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <div className="bg-[#F9FAFB] border border-[#ccc] py-10">
       <div className="container max-w-[1360px] mx-auto px-4 ">
         <div className="footer-wrapper">
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div
-              data-aos="fade-up"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-              data-aos-delay="100"
-              className="w-1/3"
-            >
+            <div ref={(el) => animateRefs.current.push(el)} className="w-1/3">
               {/* Logo */}
               <Link href="/">
                 <Image
@@ -36,70 +54,59 @@ export const Footer = () => {
               <div className="flex flex-row gap-8 mt-8 sm:mt-4 md:mt-0">
                 {/* Company links */}
                 <div className="w-1/2">
-                  <div className="flex flex-col gap-2">
-                    <h3
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      className="font-semibold text-[#4b5563] text-base capitalize"
-                    >
+                  <div
+                    className="flex flex-col gap-2 "
+                    ref={(el) => animateRefs.current.push(el)}
+                  >
+                    <h3 className="font-semibold text-[#4b5563] text-base capitalize">
                       Company
                     </h3>
-                    <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      href="/why-uben"
-                      className="font-normal text-[#292524] text-base hover:text-black"
-                    >
-                      About us
-                    </Link>
-                    <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      href="/prices"
-                      className="font-normal text-[#292524] text-base hover:text-black"
-                    >
-                      Prices
-                    </Link>{" "}
+                    <span>
+                      {" "}
+                      <Link
+                        href="/why-uben"
+                        className="font-normal text-black text-base hover:text-black/60"
+                      >
+                        About us
+                      </Link>
+                    </span>
+                    <span>
+                      {" "}
+                      <Link
+                        href="/prices"
+                        className="font-normal text-black text-base hover:text-black/60"
+                      >
+                        Prices
+                      </Link>{" "}
+                    </span>
                   </div>
                 </div>
                 {/* More links */}
                 <div className=" w-1/2">
-                  <div className="flex flex-col gap-2">
-                    <h3
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      className="font-semibold text-[#4b5563] text-base capitalize"
-                    >
+                  <div
+                    className="flex flex-col gap-2 "
+                    ref={(el) => animateRefs.current.push(el)}
+                  >
+                    <h3 className="font-semibold text-[#4b5563] text-base capitalize">
                       more
                     </h3>
-                    <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      href="/contact-us"
-                      className="font-normal text-[#292524] text-base hover:text-black"
-                    >
-                      contact us
-                    </Link>
-                    <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
-                      href="/faqs"
-                      className="font-normal text-[#292524] text-base hover:text-black"
-                    >
-                      Help / FAQ
-                    </Link>{" "}
+                    <span>
+                      {" "}
+                      <Link
+                        href="/contact-us"
+                        className="font-normal text-black text-base hover:text-black/60"
+                      >
+                        contact us
+                      </Link>
+                    </span>
+                    <span>
+                      <Link
+                        href="/faqs"
+                        className="font-normal text-black text-base hover:text-black/60"
+                      >
+                        Help / FAQ
+                      </Link>{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -110,14 +117,17 @@ export const Footer = () => {
           <div className="my-10 border-t border-image-border_gradient"></div>
 
           {/* Bottom section with copyright and email */}
-          <div className=" flex flex-wrap gap-3 justify-start sm:justify-between items-center">
+          <div
+            className=" flex flex-wrap gap-3 justify-start sm:justify-between items-center "
+            ref={(el) => animateRefs.current.push(el)}
+          >
             <p className=" text-gray-600 text-start">
               Copyright {currentYear} Üben AI.{" "}
               <span className="block"> All rights reserved.</span>
             </p>
             <Link
               href="mailto:help@ubenai.com"
-              className="flex items-center text-gray-600 hover:text-gray-800"
+              className="flex items-center text-gray-600 "
             >
               <div className="footer-bot_link-icon w-6 h-6 mr-2 text-gray-800">
                 <EmailIcons />

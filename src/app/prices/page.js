@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import WeStarted from "../components/WeStarted";
-import AOS from "aos";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { PricingTikkIcons } from "../components/common/Icons";
 import CommonBtn from "../components/common/CommonBtn";
 import saveImg from "../../../public/images/png/save-img.png";
@@ -10,11 +9,27 @@ import saveImg from "../../../public/images/png/save-img.png";
 export default function Home() {
   const [countryName, setCountryName] = useState("");
 
+  const animateRefs = useRef([]);
   useEffect(() => {
-    AOS.init({
-      duration: 300, // Animation duration
-      once: true, // Whether animation should happen only once
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-top");  // or animate-bottom
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateRefs.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
     });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  useEffect(() => {
 
     async function Feactdata() {
       let fetchdata = await fetch("https://ipapi.co/json/");
@@ -174,28 +189,20 @@ export default function Home() {
       <section className="pt-16 pb-12 ">
         <div className="container max-w-[1360px] mx-auto px-4 ">
           <h2
-            data-aos="fade-up"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
+         
             className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
           >
             Pricing
           </h2>
           <h1
-            data-aos="fade-up"
-            data-aos-offset="100"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-sine"
+             ref={(el) => animateRefs.current.push(el)}
             className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold animate-bottom"
           >
             Choose the Plan That&apos;s Right for You
           </h1>
 
           <p
-            data-aos="fade-right"
-            data-aos-offset="100"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-sine"
+              ref={(el) => animateRefs.current.push(el)}
             className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
@@ -203,7 +210,7 @@ export default function Home() {
             trial.
           </p>
 
-          <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
+          <div     ref={(el) => animateRefs.current.push(el)} className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
               <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
                 <div className=" p-6">

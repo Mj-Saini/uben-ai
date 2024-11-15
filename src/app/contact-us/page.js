@@ -2,27 +2,40 @@
 import Link from "next/link";
 import { contactUsCardData } from "../components/common/Helper";
 import WeStarted from "../components/WeStarted";
-import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-    useEffect(() => {
-        AOS.init({
-          duration: 300, // Animation duration
-          once: true, // Whether animation should happen only once
-        });
-      }, []);
+  const animateRefs = useRef([]);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-top");  // or animate-bottom
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateRefs.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <div className="pt-16 pb-10">
       <div className="container max-w-[1360px] mx-auto px-4">
         <div className="text-center lg:text-start ">
-          <p className="text-[16px] text-[#FA421D] font-medium tracking-[.5px] ff_general_medium">
+          <p  ref={(el) => animateRefs.current.push(el)} className="text-[16px] text-[#FA421D] font-medium tracking-[.5px] ff_general_medium">
             Contact us
           </p>
-          <p className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold">
+          <p ref={(el) => animateRefs.current.push(el)} className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold">
             We&apos;d Love to Hear from You!
           </p>
-          <p className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0">
+          <p ref={(el) => animateRefs.current.push(el)} className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0">
             Wheather you have questions, feedback,or need assistance.we&lsquo;re
             here to help.Reach out to us through any of the meathods below,and
             we'll get back to you as soon as possible
@@ -36,8 +49,7 @@ export default function Home() {
               className="lg:w-4/12 sm:px-3 md:w-6/12 mt-[40px] sm:w-9/12 w-full"
             >
               <div
-                data-aos="flip-left"
-                data-aos-easing="ease-in-sine"
+               ref={(el) => animateRefs.current.push(el)}
                 className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb] "
               >
                 <span>{card.svg_img}</span>

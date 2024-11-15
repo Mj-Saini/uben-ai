@@ -10,18 +10,33 @@ import WeStarted from "./components/WeStarted";
 import { HomeCardData } from "./components/common/Helper";
 import appStore from "../../public/images/png/app-store.png";
 import table_mobile from "../../public/images/png/table_mobile.png";
-import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { BookIcons, CommentIcons, PensilIcons, RightTikkIcons, TrackIcons } from "./components/common/Icons";
 
 export default function Home() {
+  const animateRefs = useRef([]);
+
   useEffect(() => {
-    AOS.init({
-      duration: 300, // Animation duration
-      once: true, // Whether animation should happen only once
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-top");  // or animate-bottom
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateRefs.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
     });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
+
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
@@ -29,7 +44,7 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
-              data-aos="fade-right"
+             ref={(el) => animateRefs.current.push(el)}
               className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-left "
             >
               {/* Left Content */}
@@ -70,7 +85,7 @@ export default function Home() {
 
             {/* Right Image */}
             <div
-              data-aos="fade-left"
+             ref={(el) => animateRefs.current.push(el)}
               className="w-full sm:w-9/12 lg:w-5/12 relative  animate-right"
             >
               <Image
@@ -97,9 +112,7 @@ export default function Home() {
                 className="w-full h-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
               >
                 <div
-                  data-aos="flip-left"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
+                  ref={(el) => animateRefs.current.push(el)}
                   className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
@@ -135,17 +148,13 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4">
           <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between gap-10 md:gap-0">
             <div
-              data-aos="fade-up"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
+              ref={(el) => animateRefs.current.push(el)}
               className="w-full sm:w-8/12 lg:w-5-/12 flex flex-col items-center animate-bottom"
             >
               <Image className="w-[504px]" src={bestWayToLearn} alt="phone2" />
               <div className="flex justify-start mt-6">
                 <Link
-                  data-aos="fade-up"
-                  data-aos-offset="100"
-                  data-aos-easing="ease-in-sine"
+                  ref={(el) => animateRefs.current.push(el)}
                   href="https://www.apple.com/in/app-store/"
                   target="_black"
                   className="section2_video-link play_store w-inline-block animate-bottom"
@@ -162,9 +171,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-6/12">
               <div
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+                ref={(el) => animateRefs.current.push(el)}
                 className="animate-bottom"
               >
                 <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%] ">
@@ -217,9 +224,7 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
           <div className="flex flex-col justify-center items-center gap-8 w-full md:w-3/4 mx-auto">
             <h2
-              data-aos="fade-up"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
+              ref={(el) => animateRefs.current.push(el)}
               className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold text-center animate-bottom"
             >
               We stack up well
@@ -227,9 +232,7 @@ export default function Home() {
             {/* Desktop Image */}
             <div className="hidden lg:flex">
               <Image
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+               ref={(el) => animateRefs.current.push(el)}
                 className="w-[900px] mx-auto animate-bottom"
                 src={stackTable}
                 alt="img"
@@ -238,9 +241,7 @@ export default function Home() {
             </div>
             <div className=" lg:hidden">
               <Image
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+             ref={(el) => animateRefs.current.push(el)}
                 className="animate-bottom"
                 src={table_mobile}
                 alt="button"
@@ -249,9 +250,7 @@ export default function Home() {
             </div>
             <div className="flex items-center flex-col gap-5 max-w-[630px]">
               <p
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
+                 ref={(el) => animateRefs.current.push(el)}
                 className="text-lg lg:text-xl font-normal text-center text-[#4b5563] animate-bottom"
               >
                 We’re confident you’ll like it. So we’re giving you 7-day

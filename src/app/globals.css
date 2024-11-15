@@ -55,29 +55,35 @@ body {
   z-index: 90;
 }
 
-/* aos animation */
 
+/* Custom animations */
+@keyframes animateTop {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-.animate-left {
-  transform: translateX(-50px); /* Moves object 100px from its initial position */
-  opacity: 0;
+@keyframes animateBottom {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-.animate-right {
-  transform: translateX(50px); /* Moves object 100px from its initial position */
-  opacity: 0;
-}
+
+/* Animation classes */
 .animate-top {
-  transform: translateY(-50px); /* Moves object 100px from its initial position */
-  opacity: 0;
-}
-.animate-bottom {
-  transform: translateY(50px); /* Moves object 100px from its initial position */
-  opacity: 0;
+  animation: animateTop 0.5s ease-out forwards;
 }
 
-/* AOS-triggered animation */
-[data-aos="fade-right"].aos-animate,
-[data-aos="fade-left"].aos-animate {
-  transform: translateX(0); /* Reset position */
-  opacity: 1;
+.animate-bottom {
+  animation: animateBottom 0.5s ease-out forwards;
 }
