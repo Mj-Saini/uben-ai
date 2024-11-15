@@ -8,7 +8,7 @@ import { RightTikkIcons, Yellow4SquareIcons } from "../components/common/Icons";
 
 export default function Home() {
   const animateRefs = useRef([]);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -220,6 +220,7 @@ export default function Home() {
       {/* Get Started */}
 
       <WeStarted />
+      {/* done */}
     </div>
   );
 }
