@@ -10,9 +10,9 @@ const WeStarted = () => {
     <div>
       <section className="py-16 bg-white">
         <div className="container max-w-[1360px] mx-auto px-4 ">
-          <div className="div rounded-[40px]  border border-[#ffdea9]">
+          <div className="div rounded-[40px] border border-[#ffdea9]">
             <div className="box"></div>
-            <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16   overflow-hidden">
+            <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 overflow-hidden">
               <div className="w-full lg:w-1/2">
                 <h2
                   data-aos="fade-up"

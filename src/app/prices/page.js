@@ -282,7 +282,7 @@ export default function Home() {
                   <CommonBtn
                     path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                     btnName="Get started"
-                    btnStyling="text-black bg-[#fcd34d] !font-medium"
+                    btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
                   />
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function Home() {
                     <CommonBtn
                       path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                       btnName="Get started"
-                      btnStyling="text-black bg-[#fcd34d] !font-medium"
+                      btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
                     />
                   </div>
               </div>

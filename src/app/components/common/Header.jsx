@@ -40,7 +40,7 @@ const Header = () => {
               <div key={index} onClick={() => setToggleNav(false)}>
                 <Link
                   href={tab.path}
-                  className={`font-normal text-base capitalize flex items-center gap-3 justify-between duration-300 hover:text-black ${
+                  className={`font-normal text-base capitalize flex items-center gap-3 justify-between duration-300 hover:text-black/60 ${
                     location === tab.path ? "text-black" : "text-[#292524]"
                   }`}
                 >
@@ -51,7 +51,7 @@ const Header = () => {
             <CommonBtn
               path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
               btnName="Download App"
-              btnStyling="text-[#292524] bg-[#fcd34d] capitalize w-full lg:hidden"
+              btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize w-full lg:hidden"
             />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
@@ -60,7 +60,7 @@ const Header = () => {
               <CommonBtn
                 path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                 btnName="Download App"
-                btnStyling="text-[#292524] bg-[#fcd34d] capitalize"
+                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize"
               />
             </div>
             <div

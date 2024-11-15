@@ -60,7 +60,7 @@ export default function Home() {
                 <CommonBtn
                   path="/https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                   btnName="Get Started"
-                  btnStyling="text-[#292524] bg-[#fcd34d] w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
+                  btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
                 />
                 <p className=" text-sm text-[#6b7280]">
                   Free for 7 days. Then billed annually.
@@ -261,7 +261,7 @@ export default function Home() {
                 <CommonBtn
                   path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                   btnName="Start learning for free now"
-                  btnStyling="text-[#292524] bg-[#fcd34d] !text-base !font-medium w-[260px] py-3"
+                  btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !text-base !font-medium w-[260px] py-3"
                 />
            
             </div>
