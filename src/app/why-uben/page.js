@@ -31,10 +31,10 @@ export default function Home() {
             comprehensive, and practical.
           </h1>
     
-        <p data-aos="fade-right"
+        <p data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-left">
+              data-aos-easing="ease-in-sine" className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom">
           Üben was founded in 2024 by a group who saw the potential of AI to
           revolutionize language learning.
         </p>
@@ -97,10 +97,10 @@ export default function Home() {
       <div className="container max-w-[1360px] mx-auto px-4 mt-5">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10">
-            <div data-aos="fade-right"
+            <div data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-left">
+              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-bottom">
               <h5 className="ff_general_semibold leading-[150%] text-lg lg:text-xl">
                 Main Features
               </h5>
@@ -134,25 +134,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left"
+          <div data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-right">
+              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-bottom">
             <Image  className="w-full lg:w-[565px]" src={mainFeaturePhnImg} alt="phone" />
           </div>
         </div>
         <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
-          <div data-aos="fade-right"
+          <div data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-left">
+              data-aos-easing="ease-in-sine" className="w-full sm:w-8/12 lg:w-5/12 animate-bottom">
             <Image className="w-[565px]" src={whyChoosePhnImg} alt="phone2" />
           </div>
           <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
-            <div data-aos="fade-left"
+            <div data-aos="fade-up"
               data-aos-offset="100"
               data-aos-delay="100"
-              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-right">
+              data-aos-easing="ease-in-sine" className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-bottom">
               <h5 className="font-semibold leading-[150%] text-[20px]">
                 Why Choose Us
               </h5>

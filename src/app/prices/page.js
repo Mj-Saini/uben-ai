@@ -192,7 +192,7 @@ export default function Home() {
           </h1>
 
           <p
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
@@ -205,7 +205,9 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+              <div   data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="100" className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6 animate-bottom">
                 <div className=" p-6">
                   <div className="flex items-center justify-between">
                     <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
@@ -288,7 +290,9 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 xl:w-5/12 mt-14 md:mt-0 md:p-3 relative">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+              <div   data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="100" className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6 animate-bottom">
                 <div className="  p-6">
                   <Image
                     className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0`}

@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
               data-aos="fade-right"
-              className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-left "
+              className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-bottom "
             >
               {/* Left Content */}
               <div className="space-y-4">
@@ -71,7 +71,7 @@ export default function Home() {
             {/* Right Image */}
             <div
               data-aos="fade-left"
-              className="w-full sm:w-9/12 lg:w-5/12 relative  animate-right"
+              className="w-full sm:w-9/12 lg:w-5/12 relative  animate-bottom"
             >
               <Image
                 src={heroImg}
@@ -97,10 +97,10 @@ export default function Home() {
                 className="w-full h-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
               >
                 <div
-                  data-aos="flip-left"
+                  data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
-                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10"
+                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 animate-bottom"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
                   {items.description}
