@@ -52,7 +52,7 @@ export const Footer = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-delay="100"
                       href="/why-uben"
-                      className="font-normal text-[#292524] text-base hover:text-black"
+                      className="font-normal text-[#292524] text-base hover:text-black/60"
                     >
                       About us
                     </Link>
@@ -62,7 +62,7 @@ export const Footer = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-delay="100"
                       href="/prices"
-                      className="font-normal text-[#292524] text-base hover:text-black"
+                      className="font-normal text-[#292524] text-base hover:text-black/60"
                     >
                       Prices
                     </Link>{" "}
@@ -86,7 +86,7 @@ export const Footer = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-delay="100"
                       href="/contact-us"
-                      className="font-normal text-[#292524] text-base hover:text-black"
+                      className="font-normal text-[#292524] text-base hover:text-black/60"
                     >
                       contact us
                     </Link>
@@ -96,7 +96,7 @@ export const Footer = () => {
                       data-aos-easing="ease-in-sine"
                       data-aos-delay="100"
                       href="/faqs"
-                      className="font-normal text-[#292524] text-base hover:text-black"
+                      className="font-normal text-[#292524] text-base hover:text-black/60"
                     >
                       Help / FAQ
                     </Link>{" "}
@@ -122,7 +122,7 @@ export const Footer = () => {
               <div className="footer-bot_link-icon w-6 h-6 mr-2 text-gray-800">
                 <EmailIcons />
               </div>
-              help@ubenai.com
+            <span>  help@ubenai.com</span>
             </Link>
           </div>
         </div>

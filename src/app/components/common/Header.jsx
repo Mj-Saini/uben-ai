@@ -33,7 +33,7 @@ const Header = () => {
 
           <div
             className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-transparent duration-300 z-10 ${
-              !toggleNav ? "!-top-[100vh]" : "top-12 sm:top-[60px] md:top-[71px] px-5"
+              !toggleNav ? "!-top-[100vh]" : "top-12 sm:top-[60px] md:top-[71px] px-5 pt-8"
             }`}
           >
             {headerData.map((tab, index) => (
@@ -51,7 +51,7 @@ const Header = () => {
             <CommonBtn
               path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
               btnName="Download App"
-              btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize w-full flex lg:hidden"
+              btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !py-3.5 capitalize w-full flex lg:hidden"
             />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">

@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="bg_liner_section pt-12 pb-10 lg:pb-0">
+      <section className="bg_liner_section pt-12 pb-10 ">
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
@@ -53,12 +53,12 @@ export default function Home() {
                   Learn from 200+ lessons from A1 to B2 and practice your new
                   skills online. Üben is your personalized AI language tutor
                   that gets you writing and speaking{" "}
-                  <span className="font-semibold">better</span> and{" "}
-                  <span className="font-semibold">faster</span>.
+                  <span className="ff_general_semibold">better</span> and{" "}
+                  <span className="ff_general_semibold">faster</span>.
                 </p>
 
                 <CommonBtn
-                  path="/https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                  path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                   btnName="Get Started"
                   btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
                 />
@@ -94,19 +94,19 @@ export default function Home() {
             {HomeCardData.map((items, index) => (
               <div
                 key={index}
-                className="w-full h-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
+                className="w-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
               >
                 <div
                   data-aos="fade-up"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
-                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 animate-bottom"
+                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 animate-bottom h-full flex flex-col justify-between"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
                   {items.description}
                   </p>
                   <div className="flex justify-between items-center mt-8">
-                    <h3 className="text-[#292524] text-base lg:text-lg font-medium">
+                    <h3 className="text-black text-base lg:text-lg font-medium">
                     {items.name}
                     </h3>
                     <div className="flex gap-2">
@@ -167,10 +167,10 @@ export default function Home() {
                 data-aos-easing="ease-in-sine"
                 className="animate-bottom"
               >
-                <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[150%] ">
+                <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[120%] ">
                   The best way to learn a language is through practice
                 </h2>
-                <div className="flex items-start  mt-4">
+                <div className="flex items-start mt-6 lg:mt-10">
                   <div>
                     <PensilIcons />
                   </div>

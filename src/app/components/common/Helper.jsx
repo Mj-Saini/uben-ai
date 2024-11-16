@@ -63,7 +63,7 @@ export const HomeCardData = [
   },
   {
     description:
-      "I no longer subscribe to Duolingo. Üben is by far the best one [of AI language apps].",
+      "I'm enjoying it a lot more than Duolingo and Babbel.",
     name: "Anonymous, USA",
   },
 ];
