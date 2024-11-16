@@ -33,7 +33,7 @@ const Header = () => {
 
           <div
             className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-transparent duration-300 z-10 ${
-              !toggleNav ? "!-top-[100vh]" : "top-[71px]"
+              !toggleNav ? "!-top-[100vh]" : "top-12 sm:top-[60px] md:top-[71px] px-5"
             }`}
           >
             {headerData.map((tab, index) => (
@@ -51,7 +51,7 @@ const Header = () => {
             <CommonBtn
               path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
               btnName="Download App"
-              btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize w-full lg:hidden"
+              btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize w-full flex lg:hidden"
             />
           </div>
           <div className="flex items-center gap-3 sm:gap-5">
@@ -65,23 +65,23 @@ const Header = () => {
             </div>
             <div
               onClick={() => setToggleNav(!toggleNav)}
-              className="flex flex-col justify-between h-5 w-6 lg:hidden z-[100] relative cursor-pointer duration-300"
+              className="flex flex-col justify-between h-3.5 w-5 lg:hidden z-[100] relative cursor-pointer duration-300"
             >
               <span
-                className={` border-2 bg-black w-full rounded-sm duration-300 ${
+                className={` border bg-[#292524] w-full duration-300 ${
                   toggleNav
-                    ? "translate-y-[8px] -rotate-45 border-black"
-                    : "border-black"
+                    ? "translate-y-[6px] rotate-45 border-[#292524]"
+                    : "border-[#292524]"
                 }`}
               ></span>
+            
               <span
-                className={` border-2 bg-black w-full rounded-sm duration-300 ${
-                  toggleNav ? "rotate-45 border-black" : "border-black"
+                className={` border bg-[#292524] w-full duration-300 ${
+                  toggleNav ? "opacity-0 border-[#292524]" : "border-[#292524]"
                 }`}
-              ></span>
-              <span
-                className={` border-2 bg-black w-full rounded-sm duration-300 ${
-                  toggleNav ? "opacity-0 border-black" : "border-black"
+              ></span>  <span
+                className={` border bg-[#292524] w-full duration-300 ${
+                  toggleNav ? "-rotate-45 translate-y-[-6px] border-[#292524]" : "border-[#292524]"
                 }`}
               ></span>
             </div>
