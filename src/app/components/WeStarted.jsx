@@ -1,30 +1,11 @@
-import React, { useEffect, useRef } from "react";
+'use client'
 import { RightTikkIcons } from "./common/Icons";
 import Link from "next/link";
 import Image from "next/image";
 import appStore from "../../../public/images/png/app-store.png";
 
 const WeStarted = () => {
-  const animateRefs = useRef([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-top");  // or animate-bottom
-        }
-      });
-    }, { threshold: 0.1 });
-
-    animateRefs.current.forEach((el) => {
-      if (el) {
-        observer.observe(el);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  
   return (
     <div>
       <section className="py-16 bg-white">
@@ -32,17 +13,17 @@ const WeStarted = () => {
           <div className="div rounded-[40px] border border-[#ffdea9]">
             <div className="box"></div>
             <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 overflow-hidden">
-              <div  ref={(el) => animateRefs.current.push(el)} className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 animate-top">
                 <h2
                  
-                  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold ff_general_semibold animate-bottom"
+                  className="text-3xl md:text-4xl lg:text-[40px] text-black font-semibold ff_general_semibold animate-top"
                 >
                   Ready to get started?
                 </h2>
                 <div className="mt-6 flex flex-col gap-3">
                   <div
                   
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-2 items-center animate-top"
                   >
                     <div>
                       <RightTikkIcons />
@@ -53,7 +34,7 @@ const WeStarted = () => {
                   </div>
                   <div
                    
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-2 items-center animate-top"
                   >
                     <div>
                       <RightTikkIcons />
@@ -64,7 +45,7 @@ const WeStarted = () => {
                   </div>
                   <div
                   
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-2 items-center animate-top"
                   >
                     <div>
                       <RightTikkIcons />
@@ -75,10 +56,10 @@ const WeStarted = () => {
                   </div>
                 </div>
               </div>
-              <div  ref={(el) => animateRefs.current.push(el)} className="w-full lg:w-4/12 mt-6 lg:mt-0">
+              <div  className="w-full lg:w-4/12 mt-6 lg:mt-0">
                 <h3
                
-                  className="text-2xl md:text-[32px] text-black text-start lg:text-center ff_general_medium animate-bottom"
+                  className="text-2xl md:text-[32px] text-black text-start lg:text-center ff_general_medium animate-top"
                 >
                   Download the app now and start learning.
                 </h3>
@@ -88,7 +69,7 @@ const WeStarted = () => {
                   
                     target="_blank"
                     href="https://www.apple.com/in/app-store/"
-                    className="section2_video-link play_store w-inline-block animate-bottom"
+                    className="section2_video-link play_store w-inline-block animate-top"
                   >
                     <Image
                       src={appStore}

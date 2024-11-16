@@ -9,26 +9,7 @@ import saveImg from "../../../public/images/png/save-img.png";
 export default function Home() {
   const [countryName, setCountryName] = useState("");
 
-  const animateRefs = useRef([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-top");  // or animate-bottom
-        }
-      });
-    }, { threshold: 0.1 });
-
-    animateRefs.current.forEach((el) => {
-      if (el) {
-        observer.observe(el);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+ 
   useEffect(() => {
 
     async function Feactdata() {
@@ -190,29 +171,29 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 ">
           <h2
          
-            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
+            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px]  animate-top"
           >
             Pricing
           </h2>
           <h1
-             ref={(el) => animateRefs.current.push(el)}
-            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold animate-bottom"
+            
+            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold  animate-top"
           >
             Choose the Plan That&apos;s Right for You
           </h1>
 
           <p
-              ref={(el) => animateRefs.current.push(el)}
-            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
+             
+            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center  animate-top"
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
             billed via the App Store or Google Play Store after a 7-day free
             trial.
           </p>
 
-          <div     ref={(el) => animateRefs.current.push(el)} className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
+          <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
             <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6  animate-top">
                 <div className=" p-6">
                   <div className="flex items-center justify-between">
                     <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
@@ -295,7 +276,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 xl:w-5/12 mt-14 md:mt-0 md:p-3 relative">
-              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6">
+              <div className=" bg-white border border-gray-200 rounded-3xl shadow-lg pt-6  animate-top">
                 <div className="  p-6">
                   <Image
                     className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0`}

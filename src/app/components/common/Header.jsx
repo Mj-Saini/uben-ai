@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className=" sticky top-0 w-full z-10">
-      <div className={`duration-300 bg-[#FBFBFB] `}>
+      <div className={`duration-300 bg-[#FBFBFB]  animate-bottom`}>
         <div
           data-aos="fade-down"
           className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}

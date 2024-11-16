@@ -3,55 +3,30 @@ import Image from "next/image";
 import WeStarted from "../components/WeStarted";
 import mainFeaturePhnImg from "../../../public/images/png/phone.png";
 import whyChoosePhnImg from "../../../public/images/png/phone2.png";
-import { useEffect, useRef } from "react";
 import { RightTikkIcons, Yellow4SquareIcons } from "../components/common/Icons";
 
 export default function Home() {
-  const animateRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-top"); 
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    animateRefs.current.forEach((el) => {
-      if (el) {
-        observer.observe(el);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
+  
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
       <section className="bg-aboutHero_gradient pt-24 md:pt-28 pb-12">
         <div className="container max-w-[1360px] mx-auto px-4 ">
-          <h2 className="text-base ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom">
+          <h2 className="text-base ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-top">
             Why Üben?
           </h2>
           <h1
-            ref={(el) => animateRefs.current.push(el)}
-            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 lg:leading-[150%] text-center ff_general_semibold animate-bottom"
+            
+            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 lg:leading-[150%] text-center ff_general_semibold animate-top"
           >
             We believe that language learning should be interactive,
             comprehensive, and practical.
           </h1>
 
           <p
-                        ref={(el) => animateRefs.current.push(el)}
+                        
 
-            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-left"
+            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-top"
           >
             Üben was founded in 2024 by a group who saw the potential of AI to
             revolutionize language learning.
@@ -59,11 +34,11 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center">
             <div
-                            ref={(el) => animateRefs.current.push(el)}
+                            
 
-              className="w-full"
+              className="w-full  animate-top"
             >
-              <div className="flex flex-col justify-center md:justify-start mb-2 animate-bottom">
+              <div className="flex flex-col justify-center md:justify-start mb-2">
                 <Yellow4SquareIcons />
                 <h3 className="text-xl lg:text-2xl text-[#000000] text-left font-semibold mt-[16px] ff_general_semibold">
                   Interactive
@@ -76,9 +51,9 @@ export default function Home() {
             </div>
 
             <div
-                            ref={(el) => animateRefs.current.push(el)}
+                            
 
-              className="w-full animate-bottom"
+              className="w-full animate-top"
             >
               <div className="flex flex-col justify-center md:justify-start mb-2">
                 <Yellow4SquareIcons />
@@ -96,9 +71,9 @@ export default function Home() {
             </div>
 
             <div
-                       ref={(el) => animateRefs.current.push(el)}
+                       
 
-              className="w-full animate-bottom"
+              className="w-full animate-top"
             >
               <div className="flex flex-col justify-center md:justify-start mb-2">
                 <Yellow4SquareIcons />
@@ -117,9 +92,9 @@ export default function Home() {
       {/* Main Features */}
       <div className="container max-w-[1360px] mx-auto px-4 mt-5">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-          <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10">
+          <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10  animate-top">
             <div
-                       ref={(el) => animateRefs.current.push(el)}
+                       
 
               className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-left"
             >
@@ -165,9 +140,9 @@ export default function Home() {
             </div>
           </div>
           <div
-                        ref={(el) => animateRefs.current.push(el)}
+                        
 
-            className="w-full sm:w-8/12 lg:w-5/12 animate-right"
+            className="w-full sm:w-8/12 lg:w-5/12 animate-top"
           >
             <Image
               className="w-full lg:w-[565px]"
@@ -178,17 +153,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
           <div
-                         ref={(el) => animateRefs.current.push(el)}
+                         
 
-            className="w-full sm:w-8/12 lg:w-5/12 animate-left"
+            className="w-full sm:w-8/12 lg:w-5/12  animate-top"
           >
             <Image className="w-[565px]" src={whyChoosePhnImg} alt="phone2" />
           </div>
           <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
             <div
-                            ref={(el) => animateRefs.current.push(el)}
+                            
 
-              className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] animate-right"
+              className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px]  animate-top"
             >
               <h5 className="font-semibold leading-[150%] text-[20px]">
                 Why Choose Us

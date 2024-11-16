@@ -9,36 +9,14 @@ import { EmailIcons } from "./Icons";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const animateRefs = useRef([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-top"); // or animate-bottom
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    animateRefs.current.forEach((el) => {
-      if (el) {
-        observer.observe(el);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+ 
   return (
     <div className="bg-[#F9FAFB] border border-[#ccc] py-10">
       <div className="container max-w-[1360px] mx-auto px-4 ">
         <div className="footer-wrapper">
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div ref={(el) => animateRefs.current.push(el)} className="w-1/3">
+            <div className="w-1/3 animate-top">
               {/* Logo */}
               <Link href="/">
                 <Image
@@ -53,10 +31,10 @@ export const Footer = () => {
               {" "}
               <div className="flex flex-row gap-8 mt-8 sm:mt-4 md:mt-0">
                 {/* Company links */}
-                <div className="w-1/2">
+                <div className="w-1/2 animate-top">
                   <div
                     className="flex flex-col gap-2 "
-                    ref={(el) => animateRefs.current.push(el)}
+                  
                   >
                     <h3 className="font-semibold text-[#4b5563] text-base capitalize">
                       Company
@@ -84,8 +62,8 @@ export const Footer = () => {
                 {/* More links */}
                 <div className=" w-1/2">
                   <div
-                    className="flex flex-col gap-2 "
-                    ref={(el) => animateRefs.current.push(el)}
+                    className="flex flex-col gap-2 animate-top"
+                  
                   >
                     <h3 className="font-semibold text-[#4b5563] text-base capitalize">
                       more
@@ -119,7 +97,7 @@ export const Footer = () => {
           {/* Bottom section with copyright and email */}
           <div
             className=" flex flex-wrap gap-3 justify-start sm:justify-between items-center "
-            ref={(el) => animateRefs.current.push(el)}
+          
           >
             <p className=" text-gray-600 text-start">
               Copyright {currentYear} Üben AI.{" "}
