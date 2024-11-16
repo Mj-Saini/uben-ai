@@ -46,8 +46,9 @@ body {
 
 .box {
   pointer-events: none;
+  -webkit-mix-blend-mode: soft-light; 
   mix-blend-mode: soft-light;
-  background-image: url("https://cdn.discordapp.com/attachments/1257987764440535161/1306646362632491088/we-started-img.png?ex=67376cc1&is=67361b41&hm=03767d8def673757f26fdc2e08e79c9397669f1b3712fe2d8bf1e336bc3bcc26&");
+  background-image: url("../../public/images/png/started-img.png");
   background-position: 50%;
   background-size: cover;
   position: absolute;
@@ -62,7 +63,7 @@ body {
   opacity: 0;
 }
 .animate-bottom {
-  transform: translateY(200px); /* Moves object 100px from its initial position */
+  transform: translateY(30px); /* Moves object 100px from its initial position */
   opacity: 0;
 }
 
