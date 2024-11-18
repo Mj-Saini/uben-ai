@@ -36,7 +36,7 @@ export default function Home() {
               data-aos-delay="100"
               data-aos-easing="ease-in-sine"  className="text-lg lg:text-xl font-normal text-[#4b5563] my-6 animate-bottom">
             Everything you need to know about Üben AI. Still have questions?{" "}
-            <Link className="text-[#292524] font-medium " href="">
+            <Link className="text-[#292524] font-medium ms-3" href="/contact-us">
               Contact Us
             </Link>
           </p>
