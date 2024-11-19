@@ -285,7 +285,7 @@ export default function Home() {
                 </div>
                 <div className="py-5 bg-[#f9fafb] rounded-b-3xl px-6">
                   <CommonBtn
-                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                    path=""
                     btnName="Get started"
                     btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
                   />
@@ -376,7 +376,7 @@ export default function Home() {
                 </div>
                 <div className="py-5 bg-[#f9fafb] rounded-b-3xl px-6">
                   <CommonBtn
-                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                    path=""
                     btnName="Get started"
                     btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
                   />

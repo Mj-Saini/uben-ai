@@ -15,10 +15,10 @@ export const Footer = () => {
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <div
-              data-aos="fade-up"
-              data-aos-offset="100"
-              data-aos-easing="ease-in-sine"
-              data-aos-delay="100"
+              // data-aos="fade-up"
+              // data-aos-offset="100"
+              // data-aos-easing="ease-in-sine"
+              // data-aos-delay="100"
               className="w-1/3"
             >
               {/* Logo */}
@@ -38,31 +38,31 @@ export const Footer = () => {
                 <div className="w-1/2">
                   <div className="flex flex-col gap-2">
                     <h3
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       className="font-semibold text-[#4b5563] text-base capitalize"
                     >
                       Company
                     </h3>
                     <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       href="/why-uben"
-                      className="font-normal text-[#292524] text-base hover:text-black/60"
+                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
                     >
                       About us
                     </Link>
                     <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       href="/prices"
-                      className="font-normal text-[#292524] text-base hover:text-black/60"
+                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
                     >
                       Prices
                     </Link>{" "}
@@ -72,31 +72,31 @@ export const Footer = () => {
                 <div className=" w-1/2">
                   <div className="flex flex-col gap-2">
                     <h3
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       className="font-semibold text-[#4b5563] text-base capitalize"
                     >
                       more
                     </h3>
                     <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       href="/contact-us"
-                      className="font-normal text-[#292524] text-base hover:text-black/60"
+                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300 capitalize"
                     >
                       contact us
                     </Link>
                     <Link
-                      data-aos="fade-up"
-                      data-aos-offset="100"
-                      data-aos-easing="ease-in-sine"
-                      data-aos-delay="100"
+                      // data-aos="fade-up"
+                      // data-aos-offset="100"
+                      // data-aos-easing="ease-in-sine"
+                      // data-aos-delay="100"
                       href="/faqs"
-                      className="font-normal text-[#292524] text-base hover:text-black/60"
+                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
                     >
                       Help / FAQ
                     </Link>{" "}

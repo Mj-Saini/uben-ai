@@ -16,24 +16,24 @@ const Header = () => {
   }, [toggleNav]);
 
   return (
-    <div className=" sticky top-0 w-full z-10">
-      <div className={`duration-300 bg-[#FBFBFB] `}>
+    <div className=" sticky top-0 w-full">
+      <div className={` bg-[#FBFBFB] `}>
         <div
           data-aos="fade-down"
           data-aos-offset="100"
-          className={`sm:py-3 p-2 sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
+          className={`sm:py-3 px-4 py-[13px] sm:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
         >
           <Link href="/">
             <Image
-              className={`w-28 sm:w-32 md:w-[160px] relative z-50`}
+              className={`w-[128px] sm:w-32 md:w-[160px] relative z-50`}
               src={logo}
               alt="logo"
             />
           </Link>
 
           <div
-            className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-[#FFFFFF] lg:bg-white duration-300 z-10 ${
-              !toggleNav ? "!-top-[100vh]" : "top-12 sm:top-[60px] md:top-[71px] px-5 pt-8"
+            className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-white duration-1000 z-0 ${
+              !toggleNav ? "!-top-[100vh]" : "top-[63px] sm:top-[60px] md:top-[71px] px-5 pt-8"
             }`}
           >
             {headerData.map((tab, index) => (

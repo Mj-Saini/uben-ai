@@ -81,7 +81,7 @@ const WeStarted = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-delay="100"
                     target="_blank"
-                    href="https://www.apple.com/in/app-store/"
+                    href="https://apps.apple.com/us/app/learn-german-uben/id6504501329"
                     className="section2_video-link play_store w-inline-block animate-bottom"
                   >
                     <Image
