@@ -7,7 +7,7 @@ const CommonBtn = ({ btnName, btnStyling,path }) => {
     <>
       <Link href={`${path}`}
       target="_blank"
-        className={` font-normal text-base capitalize flex justify-center items-center rounded-[50px] py-[6px] sm:py-3 px-3 sm:px-4 duration-300 ${btnStyling} ff_general_medium`}
+        className={` font-normal text-base flex justify-center items-center rounded-[50px] py-[6px] sm:py-3 px-3 sm:px-4 duration-300 ${btnStyling} ff_general_medium`}
       >
         {btnName}
       </Link>

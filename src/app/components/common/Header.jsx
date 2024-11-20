@@ -94,7 +94,7 @@ const Header = () => {
               <CommonBtn
                 path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                 btnName="Download App"
-                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 capitalize"
+                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d99] capitalize"
               />
             </div>
             {/* <div

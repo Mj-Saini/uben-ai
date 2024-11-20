@@ -45,7 +45,9 @@ export default function Home() {
               data-aos-delay="100"
               data-aos-easing="ease-in-sine" className="w-full">
               <div className="flex flex-col justify-center md:justify-start mb-2 animate-bottom">
-              <Yellow4SquareIcons/>
+             <span>
+             <Yellow4SquareIcons/>
+             </span>
                 <h3 className="text-xl lg:text-2xl text-[#000000] text-left font-semibold mt-[16px] ff_general_semibold">
                   Interactive
                 </h3>
@@ -58,7 +60,7 @@ export default function Home() {
 
             <div data-aos="fade-up"
               data-aos-offset="100"
-              data-aos-delay="100"
+              data-aos-delay="200"
               data-aos-easing="ease-in-sine" className="w-full animate-bottom">
               <div className="flex flex-col justify-center md:justify-start mb-2">
               <Yellow4SquareIcons/>
@@ -77,7 +79,7 @@ export default function Home() {
 
             <div data-aos="fade-up"
               data-aos-offset="100"
-              data-aos-delay="100"
+              data-aos-delay="300"
               data-aos-easing="ease-in-sine" className="w-full animate-bottom">
               <div className="flex flex-col justify-center md:justify-start mb-2">
               <Yellow4SquareIcons/>
