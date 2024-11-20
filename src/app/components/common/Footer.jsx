@@ -52,7 +52,7 @@ export const Footer = () => {
                       // data-aos-easing="ease-in-sine"
                       // data-aos-delay="100"
                       href="/why-uben"
-                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
+                      className="font-normal text-[#292524] text-base hover:text-black/60 duration-300"
                     >
                       About us
                     </Link>
@@ -62,7 +62,7 @@ export const Footer = () => {
                       // data-aos-easing="ease-in-sine"
                       // data-aos-delay="100"
                       href="/prices"
-                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
+                      className="font-normal text-[#292524] text-base hover:text-black/60 duration-300"
                     >
                       Prices
                     </Link>{" "}
@@ -86,7 +86,7 @@ export const Footer = () => {
                       // data-aos-easing="ease-in-sine"
                       // data-aos-delay="100"
                       href="/contact-us"
-                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300 capitalize"
+                      className="font-normal text-[#292524] text-base hover:text-black/60 duration-300 capitalize"
                     >
                       contact us
                     </Link>
@@ -96,7 +96,7 @@ export const Footer = () => {
                       // data-aos-easing="ease-in-sine"
                       // data-aos-delay="100"
                       href="/faqs"
-                      className="font-normal text-[#292524] text-base hover:text-black/50 duration-300"
+                      className="font-normal text-[#292524] text-base hover:text-black/60 duration-300"
                     >
                       Help / FAQ
                     </Link>{" "}

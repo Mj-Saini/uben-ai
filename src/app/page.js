@@ -18,7 +18,7 @@ import { BookIcons, CommentIcons, PensilIcons, RightTikkIcons, TrackIcons } from
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 300, // Animation duration
+      duration: 500, // Animation duration
       once: true, // Whether animation should happen only once
     });
   }, []);
@@ -29,12 +29,17 @@ export default function Home() {
         <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
+              
+              
               className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-bottom "
             >
               {/* Left Content */}
               <div className="space-y-4">
                 <Image
+                 data-aos="fade-up"
+                data-aos-duration="500"
+              data-aos-delay="300"
                   src={logoIcon}
                   alt="small illustration"
                   width={48}
@@ -42,14 +47,19 @@ export default function Home() {
                   className="image"
                 />
 
-                <h1 className="ff_general_semibold text-3xl sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] sm:!leading-[150%]">
+                <h1 
+                  data-aos="fade-up"
+               className="ff_general_semibold text-3xl sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] sm:!leading-[150%]">
                   The ✨
                   <span className="bg-yellow_gradient bg-clip-text text-transparent">
                     magical
                   </span>
                   ✨ new way to learn German
                 </h1>
-                <p className="text-[#4b5563] text-base lg:text-xl font-normal">
+                <p
+                 data-aos="fade-up"
+                 data-aos-duration="1000"
+               data-aos-delay="200" className="text-[#4b5563] text-base lg:text-xl font-normal">
                   Learn from 200+ lessons from A1 to B2 and practice your new
                   skills online. Üben is your personalized AI language tutor
                   that gets you writing and speaking{" "}
