@@ -66,7 +66,7 @@ const Header = () => {
         </div>
 
           <div
-            className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-white duration-500 z-10 ${
+            className={`flex gap-5 xl:gap-8 max-lg:fixed left-0 max-lg:h-screen max-lg:w-screen max-lg:items-center max-lg:justify-start flex-col lg:!flex-row bg-white lg:bg-transparent duration-500 z-10 ${
               !toggleNav ? "!-top-[100vh] opacity-0 lg:opacity-100" : "top-[63px] sm:top-[60px] md:top-[71px] px-5 pt-8 opacity-100"
             }`}
           >
