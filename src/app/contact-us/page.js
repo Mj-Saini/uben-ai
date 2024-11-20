@@ -16,13 +16,23 @@ export default function Home() {
     <div className="pt-16 pb-10">
       <div className="container max-w-[1360px] mx-auto px-4">
         <div className="text-center lg:text-start ">
-          <p className="text-[16px] text-[#FA421D] font-medium tracking-[.5px] ff_general_semibold">
-           &nbsp; &nbsp; &nbsp; Contact us
+          <p
+           data-aos="fade-up"
+           data-aos-offset="100"
+           data-aos-delay="100"
+           className="text-[16px] text-[#FA421D] tracking-[.5px] ff_general_semibold animate-bottom">
+           Contact us
           </p>
-          <p className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold">
+          <p  data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="200"
+            data-aos-duration="300" className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold  animate-bottom">
             We&apos;d Love to Hear from You!
           </p>
-          <p className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0">
+          <p data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="200"
+            data-aos-duration="300" className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0  animate-bottom">
             Wheather you have questions, feedback,or need assistance.we&lsquo;re
             here to help.Reach out to us through any of the meathods below,and
             we'll get back to you as soon as possible
@@ -36,9 +46,11 @@ export default function Home() {
               className="lg:w-4/12 sm:px-3 md:w-6/12 mt-[40px] sm:w-9/12 w-full"
             >
               <div
-                data-aos="flip-left"
-                data-aos-easing="ease-in-sine"
-                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb] "
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-delay="400"
+                data-aos-duration="500"
+                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb] animate-bottom "
               >
                 <span>{card.svg_img}</span>
                 <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px]ff_general_medium mt-5">

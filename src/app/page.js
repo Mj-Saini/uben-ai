@@ -13,7 +13,13 @@ import table_mobile from "../../public/images/png/table_mobile.png";
 import AOS from "aos";
 import { useEffect } from "react";
 import Link from "next/link";
-import { BookIcons, CommentIcons, PensilIcons, RightTikkIcons, TrackIcons } from "./components/common/Icons";
+import {
+  BookIcons,
+  CommentIcons,
+  PensilIcons,
+  RightTikkIcons,
+  TrackIcons,
+} from "./components/common/Icons";
 
 export default function Home() {
   useEffect(() => {
@@ -30,16 +36,14 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
               data-aos="fade-up"
-              
-              
               className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-bottom "
             >
               {/* Left Content */}
               <div className="space-y-4">
                 <Image
-                 data-aos="fade-up"
-                data-aos-duration="500"
-              data-aos-delay="300"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="700"
                   src={logoIcon}
                   alt="small illustration"
                   width={48}
@@ -47,9 +51,10 @@ export default function Home() {
                   className="image"
                 />
 
-                <h1 
+                <h1
                   data-aos="fade-up"
-               className="ff_general_semibold text-3xl sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] sm:!leading-[150%]">
+                  className="ff_general_semibold text-3xl sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] sm:!leading-[150%]"
+                >
                   The ✨
                   <span className="bg-yellow_gradient bg-clip-text text-transparent">
                     magical
@@ -57,9 +62,11 @@ export default function Home() {
                   ✨ new way to learn German
                 </h1>
                 <p
-                 data-aos="fade-up"
-                 data-aos-duration="1000"
-               data-aos-delay="200" className="text-[#4b5563] text-base lg:text-xl font-normal">
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                  className="text-[#4b5563] text-base lg:text-xl font-normal"
+                >
                   Learn from 200+ lessons from A1 to B2 and practice your new
                   skills online. Üben is your personalized AI language tutor
                   that gets you writing and speaking{" "}
@@ -67,12 +74,23 @@ export default function Home() {
                   <span className="ff_general_semibold">faster</span>.
                 </p>
 
-                <CommonBtn
-                  path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
-                  btnName="Get Started"
-                  btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
-                />
-                <p className=" text-sm text-[#6b7280]">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <CommonBtn
+                    path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                    btnName="Get Started"
+                    btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
+                  />
+                </div>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  className=" text-sm text-[#6b7280]"
+                >
                   Free for 7 days. Then billed annually.
                 </p>
               </div>
@@ -80,7 +98,7 @@ export default function Home() {
 
             {/* Right Image */}
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               className="w-full sm:w-9/12 lg:w-5/12 relative  animate-bottom"
             >
               <Image
@@ -113,11 +131,11 @@ export default function Home() {
                   className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 animate-bottom h-full flex flex-col justify-between"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
-                  {items.description}
+                    {items.description}
                   </p>
                   <div className="flex justify-between items-center mt-8">
                     <h3 className="text-black text-base lg:text-lg font-medium">
-                    {items.name}
+                      {items.name}
                     </h3>
                     <div className="flex gap-2">
                       {[...Array(5)].map((_, index) => (
@@ -156,7 +174,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-offset="100"
                   data-aos-easing="ease-in-sine"
-                  href="https://www.apple.com/in/app-store/"
+                  href="https://apps.apple.com/us/app/learn-german-uben/id6504501329"
                   target="_black"
                   className="section2_video-link play_store w-inline-block animate-bottom"
                 >
@@ -174,6 +192,7 @@ export default function Home() {
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
+                data-aos-delay="300"
                 data-aos-easing="ease-in-sine"
                 className="animate-bottom"
               >
@@ -267,13 +286,12 @@ export default function Home() {
                 We’re confident you’ll like it. So we’re giving you 7-day
                 unlimited access for free.
               </p>
-            
-                <CommonBtn
-                  path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
-                  btnName="Start learning for free now"
-                  btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !text-base !font-medium  py-3 inline"
-                />
-           
+
+              <CommonBtn
+                path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
+                btnName="Start learning for free now"
+                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !text-base !font-medium  py-3 inline"
+              />
             </div>
           </div>
         </div>

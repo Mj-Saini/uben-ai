@@ -176,7 +176,7 @@ export default function Home() {
           <h2
             data-aos="fade-up"
             data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="200"
             className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
           >
             Pricing
@@ -185,7 +185,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="100"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="300"
             className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold animate-bottom"
           >
             Choose the Plan That&apos;s Right for You
@@ -195,7 +195,8 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="100"
-            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+
             className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
@@ -208,7 +209,7 @@ export default function Home() {
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
-                data-aos-delay="100"
+                data-aos-delay="300"
                 className=" bg-white border border-gray-200 rounded-[40px] shadow-lg pt-2 animate-bottom"
               >
                 <div className=" p-6">
@@ -296,7 +297,7 @@ export default function Home() {
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
-                data-aos-delay="100"
+                data-aos-delay="300"
                 className=" bg-white border border-gray-200 rounded-[40px] shadow-lg pt-2 animate-bottom"
               >
                 <div className="p-6">
