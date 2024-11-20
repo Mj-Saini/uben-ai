@@ -9,7 +9,7 @@ const WeStarted = () => {
   return (
     <div>
       <section className="py-16 bg-white">
-        <div className="container max-w-[1360px] mx-auto px-4 ">
+        <div className="max-2xl:max-w-[1360px] mx-auto px-4 2xl:px-10">
           <div className="div rounded-[40px] border border-[#ffdea9]">
             <div className="box"></div>
             <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 overflow-hidden">

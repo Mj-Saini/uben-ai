@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="bg-aboutHero_gradient pt-24 md:pt-28 pb-12">
-        <div className="container max-w-[1360px] mx-auto px-4 ">
+      <section className="bg-aboutHero_gradient pt-20 md:pt-20 pb-12 min-h-screen flex">
+        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 grow flex flex-col justify-center">
           <h2
             data-aos="fade-up"
             data-aos-offset="100"
@@ -50,7 +50,7 @@ export default function Home() {
             revolutionize language learning.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center">
+          <div className="flex flex-col md:flex-row gap-8 lg:gap-16 justify-center">
             <div
             data-aos="fade-up"
             data-aos-offset="100"
@@ -113,8 +113,8 @@ export default function Home() {
         </div>
       </section>
       {/* Main Features */}
-      <div className="container max-w-[1360px] mx-auto px-4 mt-5">
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+      <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 mt-5">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between 2xl:min-h-screen">
           <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10">
             <div
             
@@ -183,13 +183,13 @@ export default function Home() {
             className="w-full sm:w-8/12 lg:w-5/12 animate-bottom"
           >
             <Image
-              className="w-full lg:w-[565px]"
+              className="w-full lg:w-[565px] 2xl:w-full"
               src={mainFeaturePhnImg}
               alt="phone"
             />
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
+        <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between 2xl:min-h-screen">
           <div
             data-aos="fade-up"
             data-aos-offset="100"
@@ -197,7 +197,7 @@ export default function Home() {
             data-aos-easing="ease-in-sine"
             className="w-full sm:w-8/12 lg:w-5/12 animate-bottom"
           >
-            <Image className="w-[565px]" src={whyChoosePhnImg} alt="phone2" />
+            <Image className="w-[565px] 2xl:w-full" src={whyChoosePhnImg} alt="phone2" />
           </div>
           <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
             <div

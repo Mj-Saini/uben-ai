@@ -32,7 +32,7 @@ export default function Home() {
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
       <section className="bg_liner_section pt-12 pb-10 ">
-        <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
+        <div className=" max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 lg:px-0">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
               data-aos="fade-up"
@@ -110,14 +110,14 @@ export default function Home() {
                 sizes="(max-width: 991px) 100vw, (max-width: 3125px) 32vw, 1000px"
                 loading="lazy"
               />
-            </div>
+            </div> 
           </div>
         </div>
       </section>
 
       {/* hero bottom cart */}
       <section className="py-10">
-        <div className="container max-w-[1360px] mx-auto px-4">
+        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 ">
           <div className="flex flex-wrap lg:justify-center w-full">
             {HomeCardData.map((items, index) => (
               <div
@@ -125,16 +125,14 @@ export default function Home() {
                 className="w-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
               >
                 <div
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 animate-bottom h-full flex flex-col justify-between"
+                 
+                  className="border border-[#e2e8f0] rounded-2xl lg:rounded-[40px] bg-homeCard_gradient p-5 lg:p-10 h-full flex flex-col justify-between"
                 >
                   <p className="text-[#292524] text-sm  lg:text-xl w-[90%] sm:w-full">
                     {items.description}
                   </p>
                   <div className="flex justify-between items-center mt-8">
-                    <h3 className="text-black text-base lg:text-lg font-medium">
+                    <h3 className="text-black text-base lg:text-lg ff_general_medium">
                       {items.name}
                     </h3>
                     <div className="flex gap-2">
@@ -160,7 +158,7 @@ export default function Home() {
 
       {/* bext way to learn */}
       <section className="pt-12">
-        <div className="container max-w-[1360px] mx-auto px-4">
+        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4">
           <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between gap-10 md:gap-0">
             <div
               data-aos="fade-up"
@@ -243,7 +241,7 @@ export default function Home() {
 
       {/* We stack up well  */}
       <section className=" pt-16 pb-10 sm:py-16 bg-white lg:mt-10">
-        <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
+        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 lg:px-0">
           <div className="flex flex-col justify-center items-center gap-8 w-full md:w-3/4 mx-auto">
             <h2
               data-aos="fade-up"

@@ -172,7 +172,7 @@ export default function Home() {
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
       <section className="pt-16 pb-12 ">
-        <div className="container max-w-[1360px] mx-auto px-4 ">
+        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 ">
           <h2
             data-aos="fade-up"
             data-aos-offset="100"

@@ -10,7 +10,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-[#F9FAFB] border border-[#ccc] py-10">
-      <div className="container max-w-[1360px] mx-auto px-4 ">
+      <div className="max-2xl:max-w-[1360px] mx-auto px-4 2xl:px-10 ">
         <div className="footer-wrapper">
           {/* Top section with logo and links */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">

@@ -21,7 +21,7 @@ const Header = () => {
         <div
           data-aos="fade-down"
           data-aos-offset="100"
-          className={`lg:px-4 max-w-[1360px] mx-auto flex justify-between w-full items-center`}
+          className={`lg:px-4 max-2xl:max-w-[1360px] 2xl:px-10 mx-auto flex justify-between w-full items-center`}
         >
         <div className="flex justify-between w-full lg:w-auto bg-[#FBFBFB] lg:bg-transparent relative z-50 lg:z-0 px-4 lg:px-0">
         <Link href="/" className=" ">

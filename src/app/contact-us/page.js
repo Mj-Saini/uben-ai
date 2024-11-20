@@ -14,7 +14,7 @@ export default function Home() {
       }, []);
   return (
     <div className="pt-16 pb-10">
-      <div className="container max-w-[1360px] mx-auto px-4">
+      <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4">
         <div className="text-center lg:text-start ">
           <p
            data-aos="fade-up"
@@ -32,7 +32,7 @@ export default function Home() {
           <p data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="200"
-            data-aos-duration="300" className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0  animate-bottom">
+            data-aos-duration="300" className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0  animate-bottom max-w-[780px]">
             Wheather you have questions, feedback,or need assistance.we&lsquo;re
             here to help.Reach out to us through any of the meathods below,and
             we'll get back to you as soon as possible
