@@ -171,13 +171,13 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="pt-16 pb-12 ">
-        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 ">
+      <section className="pt-10 md:pt-28 lg:pt-16 pb-12 bg-aboutHero_gradient">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 ">
           <h2
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-duration="200"
-            className="text-base font-medium ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
+            className="text-xs md:text-base font-medium ff_general_medium text-[#FA421D] mb-2 tracking-[0.5px] animate-bottom text-start lg:text-center "
           >
             Pricing
           </h2>
@@ -186,7 +186,7 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-duration="300"
-            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 mt-2 leading-[150%] text-center ff_general_semibold animate-bottom"
+            className="text-[32px] md:text-[56px] text-gray-900 mb-4 md:leading-[150%] text-start lg:text-center ff_general_semibold animate-bottom leading-[150%]"
           >
             Choose the Plan That&apos;s Right for You
           </h1>
@@ -197,22 +197,29 @@ export default function Home() {
             data-aos-delay="100"
             data-aos-duration="400"
 
-            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
+            className="text-[#4b5563] my-6 lg:mt-12 text-base md:text-[20px] animate-bottom"
           >
             Üben AI offers monthly and annual subscriptions. Both plans are
             billed via the App Store or Google Play Store after a 7-day free
             trial.
           </p>
 
-          <div className="flex flex-wrap justify-center md:pt-32  md:bg-Prices_gradient bg-cover bg-no-repeat bg-top">
-            <div className="w-full md:w-1/2 xl:w-5/12 md:p-3">
+         
+        </div>
+      </section>
+      <section className="pt-16 md:pt-32 pb-12 bg-Prices_gradient bg-cover bg-no-repeat bg-top">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 ">
+        
+
+          <div className="flex flex-wrap justify-center  ">
+            <div className="w-full lg:w-1/2 xl:w-5/12 md:p-3">
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-delay="300"
-                className=" bg-white border border-gray-200 rounded-[40px] shadow-lg pt-2 animate-bottom"
+                className=" bg-white border border-gray-200 rounded-[40px] shadow-lg pt-2 animate-bottom overflow-hidden"
               >
-                <div className=" p-6">
+                <div className=" p-[25px]">
                   <div className="flex items-center justify-between">
                     <h3 className="text-xl lg:text-2xl text-[#323333] ff_general_semibold">
                       Monthly plan
@@ -230,7 +237,7 @@ export default function Home() {
                         </span>
                       
                       <div className="flex items-end">
-                        <span className="text-3xl sm:text-4xl lg:text-6xl ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
+                        <span className="text-6xl ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
                           {priceData.monthly[countryName]}
                         </span>
                         <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base mb-2">
@@ -284,23 +291,23 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="py-5 bg-[#f9fafb] rounded-b-3xl px-6">
+                <div className="py-5 bg-[#f9fafb] rounded-b-3xl px-6 ">
                   <CommonBtn
                     path=""
                     btnName="Get started"
-                    btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
+                    btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !py-3 !font-medium "
                   />
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 xl:w-5/12 mt-14 md:mt-0 md:p-3 relative">
+            <div className="w-full lg:w-1/2 xl:w-5/12 mt-14 lg:mt-0 md:p-3 relative">
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-delay="300"
-                className=" bg-white border border-gray-200 rounded-[40px] shadow-lg pt-2 animate-bottom"
+                className=" bg-white border border-gray-200 rounded-[40px] pt-2 animate-bottom overflow-hidden"
               >
-                <div className="p-6">
+                <div className="p-[23px]">
                   <Image
                     className={`w-28 sm:w-32 md:w-[180px] absolute -top-8 right-0`}
                     src={saveImg}
@@ -319,7 +326,7 @@ export default function Home() {
                         </span>
                     
                       <div className="flex items-end">
-                        <span className="text-3xl sm:text-4xl lg:text-6xl text-[#323333] ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
+                        <span className="text-6xl text-[#323333] ff_general_semibold leading-[120%] ps-2 ff_general_semibold">
                           {priceData.annual[countryName]}
                         </span>
                         <span className="text-[#6b7280] text-xs sm:text-sm lg:text-base  mb-2">
@@ -379,7 +386,7 @@ export default function Home() {
                   <CommonBtn
                     path=""
                     btnName="Get started"
-                    btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium"
+                    btnStyling="text-black bg-[#fcd34d] hover:bg-[#fcd34d]/65 !font-medium  !rounded-[40px]"
                   />
                 </div>
               </div>

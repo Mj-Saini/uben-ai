@@ -18,13 +18,13 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="bg-aboutHero_gradient pt-20 md:pt-20 pb-12 min-h-screen flex">
-        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 grow flex flex-col justify-center">
+      <section className="bg-aboutHero_gradient pt-12 md:pt-20 xl:pt-0 pb-12 min-h-screen flex">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 grow flex flex-col justify-center">
           <h2
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            className="text-base ff_general_medium text-[#FA421D] mb-2 text-center tracking-[0.5px] animate-bottom"
+            className="text-xs md:text-base ff_general_medium text-[#FA421D] mb-2 text-start lg:text-center tracking-[0.5px] animate-bottom"
           >
             Why Üben?
           </h2>
@@ -33,7 +33,7 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
-            className="text-3xl sm:text-4xl md:text-5xl xl:text-[56px] text-gray-900 mb-4 lg:leading-[150%] text-center ff_general_semibold animate-bottom"
+            className="text-[32px] md:text-[56px] text-gray-900 mb-4 md:leading-[150%] text-start lg:text-center ff_general_semibold animate-bottom leading-[150%]"
           >
             We believe that language learning should be interactive,
             comprehensive, and practical.
@@ -44,7 +44,7 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
-            className="text-[#4b5563] mb-6 lg:mb-12 mt-8 text-[14px] lg:text-[20px] text-center animate-bottom"
+            className="text-[#4b5563] my-6 lg:mb-14 lg:mt-12 text-base md:text-[20px] animate-bottom"
           >
             Üben was founded in 2024 by a group who saw the potential of AI to
             revolutionize language learning.
@@ -113,9 +113,9 @@ export default function Home() {
         </div>
       </section>
       {/* Main Features */}
-      <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 mt-5">
+      <div className="max-2xl:max-w-[1504px] py-16 md:px-10 mx-auto px-4">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between 2xl:min-h-screen">
-          <div className="w-full sm:w-9/12 md:w-7/12 lg:pe-10">
+          <div className="w-full lg:w-7/12 lg:pe-10">
             <div
             
               className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px] "
@@ -133,7 +133,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   AI-Powered Personalized Learning: Adaptive exercises that
                   evolve with your self-paced progress.
                 </p>
@@ -145,7 +145,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   24/7 Tutoring: Access to Tutor at anytime of the day, any day
                   of the week.
                 </p>
@@ -157,7 +157,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   Comprehensive Grammar and Vocabulary: Focused lessons on
                   grammar and common vocabulary.
                 </p>
@@ -169,7 +169,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   CEFR Test Preparation: Targeted practice for CEFR-aligned
                   tests like Goethe&apos;s.
                 </p>
@@ -180,7 +180,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="100"
-            className="w-full sm:w-8/12 lg:w-5/12 animate-bottom"
+            className="w-full lg:w-5/12 animate-bottom"
           >
             <Image
               className="w-full lg:w-[565px] 2xl:w-full"
@@ -195,11 +195,11 @@ export default function Home() {
             data-aos-offset="100"
             data-aos-delay="100"
             data-aos-easing="ease-in-sine"
-            className="w-full sm:w-8/12 lg:w-5/12 animate-bottom"
+            className="w-full lg:w-5/12 animate-bottom"
           >
-            <Image className="w-[565px] 2xl:w-full" src={whyChoosePhnImg} alt="phone2" />
+            <Image className="w-[565px] 2xl:w-full mx-auto" src={whyChoosePhnImg} alt="phone2" />
           </div>
-          <div className="w-full sm:w-9/12 lg:w-7/12 lg:ps-10 ">
+          <div className="w-full lg:w-7/12 lg:ps-10 ">
             <div
               
               className="bg-aboutHero_gradient border border-[#e2e8f0]  rounded-[40px] p-5 sm:px-[30px] sm:py-[30px] lg:px-[64px] lg:py-[64px]"
@@ -215,7 +215,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   Innovative Technology: Leveraging AI to create a truly
                   personalized learning experience.
                 </p>
@@ -228,7 +228,7 @@ export default function Home() {
                 <span>
                   <RightTikkIcons />
                 </span>
-                <p className="text-[12px] lg:text-[20px] text-[#000000] ms-2">
+                <p className="text-base md:text-[20px] text-[#000000] ms-2">
                   Expert-Designed Curriculum: Lessons crafted by experienced
                   educators.
                 </p>

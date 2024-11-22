@@ -13,47 +13,47 @@ export default function Home() {
         });
       }, []);
   return (
-    <div className="pt-16 pb-10">
-      <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4">
-        <div className="text-center lg:text-start ">
+    <div className="pt-12 md:pt-28 lg:pt-14">
+      <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 pb-10">
+       
           <p
            data-aos="fade-up"
            data-aos-offset="100"
            data-aos-delay="100"
-           className="text-[16px] text-[#FA421D] tracking-[.5px] ff_general_semibold animate-bottom">
+           className="text-xs md:text-base text-[#FA421D] tracking-[.5px] ff_general_medium animate-bottom">
            Contact us
           </p>
           <p  data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="200"
-            data-aos-duration="300" className="md:text-[40px] text-[30px] text-black tracking-[-1.2px] font-semibold mt-[2px] ff_general_semibold  animate-bottom">
+            data-aos-duration="300" className="md:text-[40px] text-[32px] text-black tracking-[-1.2px] font-semibold my-1.5 ff_general_semibold  animate-bottom">
             We&apos;d Love to Hear from You!
           </p>
           <p data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="200"
-            data-aos-duration="300" className="text-[#4B5563] text-[20px] lg:w-[60%] mt-[20px] md:w-[80%] text-center lg:text-start mx-auto lg:mx-0  animate-bottom max-w-[780px]">
+            data-aos-duration="300" className="text-[#4B5563] text-base md:text-[20px] mt-[20px] animate-bottom max-w-[780px]">
             Wheather you have questions, feedback,or need assistance.we&lsquo;re
             here to help.Reach out to us through any of the meathods below,and
-            we'll get back to you as soon as possible
+            we'll get back to you as soon as possible.
           </p>
-        </div>
+      
 
         <div className="flex flex-wrap flex-row justify-center lg:justify-start sm:-mx-3 ">
           {contactUsCardData.map((card, i) => (
             <div
               key={i}
-              className="lg:w-4/12 sm:px-3 md:w-6/12 mt-[40px] sm:w-9/12 w-full"
+              className="w-full sm:px-3 lg:w-6/12 mt-[40px]"
             >
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-delay="400"
                 data-aos-duration="500"
-                className="bg-[#F9FAFB] p-[24px] rounded-[16px] min-h-[250px] border border-[#e5e7eb] animate-bottom "
+                className="bg-[#F9FAFB] p-[24px] rounded-[16px] border border-[#e5e7eb] animate-bottom h-full"
               >
                 <span>{card.svg_img}</span>
-                <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px]ff_general_medium mt-5">
+                <p className="text-xl lg:text-[24px] text-[#323333] font-medium pt-[24px] ff_general_medium lg:mt-6">
                   {card.Heading}
                 </p>
                 <p className="text-[#6B7280] text-base mt-3">
@@ -63,7 +63,7 @@ export default function Home() {
 
                 <Link
                   href={`mailto:${card.content}`}
-                  className="text-[#FA421D] text-base pt-[20px] font-medium ff_general_mediums"
+                  className="text-[#FA421D] text-base pt-[20px] font-medium ff_general_semibold"
                 >
                   {card.content}
                 </Link>

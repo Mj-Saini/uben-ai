@@ -31,29 +31,28 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/*  HERO SECTION*/}
-      <section className="bg_liner_section pt-12 pb-10 ">
-        <div className=" max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 lg:px-0">
+      <section className="bg_liner_section pt-12 lg:pt-14 pb-10 ">
+        <div className=" max-2xl:max-w-[1504px] md:px-10 mx-auto px-5">
           <div className="flex flex-wrap items-center justify-center bg-[#fff] border border-[#e2e8f0] rounded-[40px] px-4 sm:px-16">
             <div
               data-aos="fade-up"
-              className="w-full lg:w-7/12 lg:pe-10 pt-10 lg:pt-0  animate-bottom "
+              className="w-full lg:w-7/12 lg:pe-10 pt-[33px] sm:pt-10 lg:pt-0  animate-bottom "
             >
               {/* Left Content */}
-              <div className="space-y-4">
+              <div className="space-y-2 px-2 md:p-5 pt-0">
                 <Image
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-delay="700"
                   src={logoIcon}
                   alt="small illustration"
-                  width={48}
-                  height={48}
-                  className="image"
+                 
+                  className="mb-6 w-[50px] md:w-14"
                 />
 
                 <h1
                   data-aos="fade-up"
-                  className="ff_general_semibold text-3xl sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] sm:!leading-[150%]"
+                  className="ff_general_semibold text-[32px] sm:text-4xl md:text-5xl xl:text-[56px] font-semibold text-[black] leading-[100%] sm:!leading-[150%]"
                 >
                   The ✨
                   <span className="bg-yellow_gradient bg-clip-text text-transparent">
@@ -65,7 +64,7 @@ export default function Home() {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
-                  className="text-[#4b5563] text-base lg:text-xl font-normal"
+                  className="text-[#4b5563] text-base lg:text-xl font-normal pt-4"
                 >
                   Learn from 200+ lessons from A1 to B2 and practice your new
                   skills online. Üben is your personalized AI language tutor
@@ -82,14 +81,15 @@ export default function Home() {
                   <CommonBtn
                     path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                     btnName="Get Started"
-                    btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full py-3 !font-medium !text-base sm:w-[130px] ff_general_medium "
+                    btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 w-full !py-3 !font-medium !text-base sm:w-[130px] ff_general_medium mt-6"
                   />
                 </div>
                 <p
                   data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                  className=" text-sm text-[#6b7280]"
+                  // data-aos-duration="1000"
+                  data-aos-delay="300"
+                  data-aos-offset="100"
+                  className=" text-sm text-[#6b7280] text-center md:text-start"
                 >
                   Free for 7 days. Then billed annually.
                 </p>
@@ -104,10 +104,8 @@ export default function Home() {
               <Image
                 src={heroImg}
                 alt="main hero image"
-                width={1000} // adjust as needed
-                height={1000} // adjust as needed
-                className="hero_image w-full h-auto"
-                sizes="(max-width: 991px) 100vw, (max-width: 3125px) 32vw, 1000px"
+              
+                className="w-[95%] mx-auto"
                 loading="lazy"
               />
             </div> 
@@ -116,13 +114,13 @@ export default function Home() {
       </section>
 
       {/* hero bottom cart */}
-      <section className="py-10">
-        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 ">
+      <section className="py-5 md:py-10">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 ">
           <div className="flex flex-wrap lg:justify-center w-full">
             {HomeCardData.map((items, index) => (
               <div
                 key={index}
-                className="w-full sm:w-1/2 lg:w-1/3 sm:px-3 mt-5"
+                className={` w-full sm:w-1/2 lg:w-1/3 sm:px-4 lg:px-6 mt-5 `}
               >
                 <div
                  
@@ -157,8 +155,8 @@ export default function Home() {
       </section>
 
       {/* bext way to learn */}
-      <section className="pt-12">
-        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4">
+      <section className="pt-[82px] pb-16">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5">
           <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between gap-10 md:gap-0">
             <div
               data-aos="fade-up"
@@ -178,23 +176,22 @@ export default function Home() {
                 >
                   <Image
                     src={appStore}
-                    width={200}
-                    height={56}
+                  
                     alt="Google Play Link"
-                    className=" w-[140px] md:w-[200px] md:h-[56px]"
+                    className=" w-[167px] md:w-[200px] md:h-[56px]"
                   />
                 </Link>
               </div>
             </div>
-            <div className="w-full lg:w-6/12">
+            <div className="w-full lg:w-6/12 xl:7/12">
               <div
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-delay="300"
                 data-aos-easing="ease-in-sine"
-                className="animate-bottom"
+                className="animate-bottom xl:ps-6"
               >
-                <h2 className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold sm:!leading-[120%] ">
+                <h2 className="ff_general_semibold text-[32px] md:text-4xl lg:text-[40px] text-black font-semibold leading-[120%] tracking-tight">
                   The best way to learn a language is through practice
                 </h2>
                 <div className="flex items-start mt-6 lg:mt-10">
@@ -240,8 +237,8 @@ export default function Home() {
       </section>
 
       {/* We stack up well  */}
-      <section className=" pt-16 pb-10 sm:py-16 bg-white lg:mt-10">
-        <div className="max-2xl:max-w-[1360px] 2xl:px-10 mx-auto px-4 lg:px-0">
+      <section className="py-16 sm:py-16 bg-white lg:mt-[64px]">
+        <div className="max-2xl:max-w-[1504px] md:px-10 mx-auto px-5 lg:px-0">
           <div className="flex flex-col justify-center items-center gap-8 w-full md:w-3/4 mx-auto">
             <h2
               data-aos="fade-up"
@@ -279,7 +276,7 @@ export default function Home() {
                 data-aos="fade-up"
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
-                className="text-lg lg:text-xl font-normal text-center text-[#4b5563] animate-bottom"
+                className="text-base lg:text-xl font-normal text-center text-[#4b5563] animate-bottom"
               >
                 We’re confident you’ll like it. So we’re giving you 7-day
                 unlimited access for free.
@@ -288,7 +285,7 @@ export default function Home() {
               <CommonBtn
                 path="https://apps.apple.com/us/app/learn-german-%C3%BCben/id6504501329"
                 btnName="Start learning for free now"
-                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !text-base !font-medium  py-3 inline"
+                btnStyling="text-[#292524] bg-[#fcd34d] hover:bg-[#fcd34d]/65 !text-base !font-medium px-5 !py-3 inline"
               />
             </div>
           </div>

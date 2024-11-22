@@ -9,11 +9,11 @@ const WeStarted = () => {
   return (
     <div>
       <section className="py-16 bg-white">
-        <div className="max-2xl:max-w-[1360px] mx-auto px-4 2xl:px-10">
+        <div className="max-2xl:max-w-[1504px] mx-auto px-5 md:px-10">
           <div className="div rounded-[40px] border border-[#ffdea9]">
             <div className="box"></div>
-            <div className="flex flex-wrap justify-between items-center p-6 sm:p-12 lg:p-16 overflow-hidden">
-              <div className="w-full lg:w-1/2">
+            <div className="flex flex-wrap justify-between items-center p-8 sm:p-12 lg:p-16 overflow-hidden">
+              <div className="w-full lg:w-7/12 xl:w-1/2">
                 <h2
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
@@ -27,7 +27,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-easing="ease-in-sine"
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-1 -ms-1 animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -40,7 +40,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-easing="ease-in-sine"
                     data-aos-delay="100"
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-1 -ms-1 animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -53,7 +53,7 @@ const WeStarted = () => {
                     data-aos="fade-up"
                     data-aos-easing="ease-in-sine"
                     data-aos-delay="100"
-                    className="flex gap-2 items-center animate-bottom"
+                    className="flex gap-1 -ms-1 animate-bottom"
                   >
                     <div>
                       <RightTikkIcons />
@@ -74,7 +74,7 @@ const WeStarted = () => {
                   Download the app now and start learning.
                 </h3>
 
-                <div className="flex justify-start sm:justify-center mt-6">
+                <div className="flex justify-start lg:ustify-center mt-6">
                   <Link
                     data-aos="fade-up"
                     data-aos-offset="100"
@@ -86,10 +86,8 @@ const WeStarted = () => {
                   >
                     <Image
                       src={appStore}
-                      width={200}
-                      height={56}
                       alt="Google Play Link"
-                      className=" w-[140px] md:w-[200px] md:h-[56px]"
+                      className=" w-[188px] md:w-[129px]"
                     />
                   </Link>
                 </div>
