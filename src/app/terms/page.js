@@ -11,11 +11,11 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="pt-16">
-      <div className="container max-w-[1360px] mx-auto px-4 lg:px-0">
-        <div className="w-full sm:w-10/12 lg:w-7/12 mx-auto">
-          <h2 className=" ff_general_semibold text-base text-[#fa421d] pb-2">Terms</h2>
-          <h2  data-aos="fade-up" className="ff_general_semibold text-3xl md:text-4xl lg:text-[40px] text-black font-semibold animate-bottom
+    <div className="pt-12 md:mt-16">
+      <div className="container max-w-[1360px] mx-auto px-5 md:px-10 pb-12">
+        <div className="w-full md:w-10/12 xl:w-[60%] mx-auto">
+          <h2 className=" ff_general_medium text-xs md:text-base text-[#fa421d] pb-2">Terms</h2>
+          <h2  data-aos="fade-up" className="ff_general_semibold text-[32px] md:text-[40px] text-black font-semibold animate-bottom
 animate-bottom">
             End User License Agreement
           </h2>
